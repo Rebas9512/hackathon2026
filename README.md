@@ -24,20 +24,28 @@ AAPL (Apple), MSFT (Microsoft), GOOGL (Alphabet), AMZN (Amazon), NVDA (NVIDIA), 
 
 Our journey starts with the simplest possible model: if a company beats earnings expectations, predict the stock goes up; if it misses, predict down.
 
-![M0 vs M1 Baseline Benchmark](outputs/m0_m1_baseline_benchmark.png)
+**Rule**: `EPS_actual > EPS_consensus → Up, otherwise → Down`
 
-| Metric | M0 (Beat/Miss Rule) | Random |
-|--------|---------------------|--------|
+**M0 Standalone Results** (51 test events, walk-forward from event 41):
+
+| Metric | M0 (Beat/Miss Rule) | Random Baseline |
+|--------|---------------------|-----------------|
 | Accuracy | **0.549** | 0.500 |
+| Precision | 0.522 | — |
+| Recall | 0.960 | — |
 | F1 | **0.676** | — |
 | AUC-ROC | 0.557 | 0.500 |
 | Gross Return | **+66.6%** | — |
 
-This naive rule already tells us something: earnings surprises have *some* predictive power (+5% over random), but only weakly. Almost half the time, the stock moves in the opposite direction of what the surprise suggests. Why?
+This naive rule already tells us something: earnings surprises have *some* predictive power (+5% over random), but only weakly. Almost half the time, the stock moves in the opposite direction of what the surprise suggests. The near-perfect recall (0.960) but low precision (0.522) reveals a structural bias — M7 companies beat earnings in 46 out of 51 test events (90%), so M0 almost always predicts "Up." It captures nearly all actual rises but also calls many false positives (beat + drop events). Only 1 actual miss was predicted "Down" correctly out of 25 actual drops.
 
-### Chapter 2 — M1: Can Surprise Magnitude Help?
+Why does a beat not guarantee an up move? The market clearly prices in *something else* before earnings day.
+
+### Chapter 2 — M0 vs M1: Does Surprise Magnitude Help?
 
 Instead of just beat/miss, M1 uses logistic regression on the actual EPS surprise percentage — maybe the *size* of the beat matters.
+
+![M0 vs M1 Baseline Benchmark](outputs/m0_m1_baseline_benchmark.png)
 
 | Metric | M0 (Beat/Miss) | M1 (LogReg on Surprise %) | Random |
 |--------|----------------|---------------------------|--------|
@@ -46,11 +54,11 @@ Instead of just beat/miss, M1 uses logistic regression on the actual EPS surpris
 | AUC-ROC | 0.557 | **0.634** | 0.500 |
 | Gross Return | **+66.6%** | +43.1% | — |
 
-**Finding**: M1 has better AUC (0.634), confirming that larger surprises do correlate with positive returns. But it can't find a useful decision boundary — the signal is too weak with just one feature. M1 ends up predicting *everything* as "up" (= Buy & Hold), with its return curve overlapping M1's at +43.1%.
+**Finding**: M1 has better AUC (0.634), confirming that larger surprises do correlate with positive returns. But it can't find a useful decision boundary — the signal is too weak with just one feature. M1 ends up predicting *everything* as "up" (= Buy & Hold), with its return curve overlapping at +43.1%.
 
-**Takeaway**: Earnings surprise alone is not enough. The market clearly prices in *something else* before earnings day.
+**Takeaway**: Surprise magnitude contains *ranking* information (AUC improves) but not enough *classification* signal to beat a naive rule. The market is pricing in something beyond the earnings number itself.
 
-### Chapter 3 — M2: Adding Pre-Earnings Sentiment
+### Chapter 3 — M0 vs M1 vs M2: Adding Pre-Earnings Sentiment
 
 Could that "something else" be sentiment? M2 adds 4 features computed from 7-day pre-earnings news:
 
