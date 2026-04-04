@@ -668,6 +668,8 @@ Computed using daily-aggregate data for quiet period:
 
 ### Phase 5: Dual-Layer Spillover Network — Diebold-Yilmaz Framework (M3 Core)
 
+> For a step-by-step plain-English explanation of the VAR → GFEVD → connectedness matrix pipeline, see [docs/dy_framework_explained.md](docs/dy_framework_explained.md).
+
 The key innovation: with continuous daily sentiment data for all 7 companies, we can build **dual-layer** dynamic connectedness networks — one for returns and one for sentiment — following the Diebold-Yilmaz (2014) framework.
 
 #### Layer 1: Return Connectedness
@@ -757,7 +759,8 @@ hackathon2026/
 │   │   └── ed_day_articles.csv           # 563 ED-day articles for post-hoc analysis
 │   └── spillover/
 │       ├── m3_features.csv              # 70 events × 4 M3 features
-│       └── connectedness_matrices.pkl   # All 7×7 DY matrices for dashboard
+│       ├── connectedness_matrices.pkl   # All 7×7 DY matrices for dashboard
+│       └── network_snapshots.json       # Snapshots for dynamic network visualization
 ├── scripts/
 │   ├── 01_fetch_sentiment.py
 │   ├── 02_fetch_prices.py

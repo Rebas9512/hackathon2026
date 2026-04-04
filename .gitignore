@@ -3,3 +3,6 @@
 __pycache__/
 *.pyc
 .claude/
+data/hackathon.db
+notebooks/*_executed.ipynb
+node_modules/
