@@ -1,0 +1,574 @@
+ticker,date,article_datetime,title,polarity,neg,neu,pos
+AAPL,2023-08-03,2023-08-03T23:37:08+00:00,Apple Faces Longest Sales Slowdown in Decades as iPhone Slumps,0.94,0.06,0.863,0.076
+AAPL,2023-08-03,2023-08-03T23:33:10+00:00,"Asian stocks flat before payrolls data, China up on stimulus promises",0.975,0.048,0.84,0.112
+AAPL,2023-08-03,2023-08-03T22:58:52+00:00,Apple posts net sales decrease for third quarter in a row,0.979,0.004,0.923,0.073
+AAPL,2023-08-03,2023-08-03T22:57:03+00:00,Apple profits rise as services arm surpasses 1bn users,0.768,0.0,0.887,0.113
+AAPL,2023-08-03,2023-08-03T22:37:00+00:00,"Apple Sees Third Straight Quarter of Falling Sales, but Services Unit Hits Record",0.25,0.108,0.735,0.157
+AAPL,2023-08-03,2023-08-03T22:06:00+00:00,"Apple, Amazon, Airbnb Beat on Earnings, Sales",0.994,0.037,0.841,0.122
+AAPL,2023-08-03,2023-08-03T22:00:06+00:00,"Compared to Estimates, Apple (AAPL) Q3 Earnings: A Look at Key Metrics",0.971,0.006,0.924,0.07
+AAPL,2023-08-03,2023-08-03T21:45:12+00:00,Apple (AAPL) Tops Q3 Earnings and Revenue Estimates,0.994,0.014,0.892,0.094
+AAPL,2023-08-03,2023-08-03T21:36:00+00:00,Apple Sales Fell 1% in the Latest Quarter. The Stock Edges Lower.,0.026,0.149,0.698,0.153
+AAPL,2023-08-03,2023-08-03T21:26:56+00:00,Apple Stock Drops As iPhone Maker's Sales Decline For Third Straight Quarter,0.0,0.0,1.0,0.0
+AAPL,2023-08-03,2023-08-03T21:16:44+00:00,"Trump arraigned in D.C., Amazon earnings, Apple's declining revenue: Top Stories",-0.878,0.101,0.814,0.085
+AAPL,2023-08-03,2023-08-03T21:05:00+00:00,"Amazon Beats, Apple Disappoints as Earnings Pour In",0.296,0.142,0.665,0.193
+AAPL,2023-08-03,2023-08-03T21:03:34+00:00,"Apple earnings beat estimates, services boost results",1.0,0.021,0.856,0.123
+AAPL,2023-08-03,2023-08-03T21:01:43+00:00,"Apple's earnings top analysts' forecasts, but year-over-year sales drop for third straight quarter",0.979,0.043,0.867,0.09
+AAPL,2023-08-03,2023-08-03T20:46:15+00:00,"Apple iPhone sales drop more than forecast, revenue falls for third straight quarter",0.986,0.017,0.895,0.088
+AAPL,2023-08-03,2023-08-03T20:45:07+00:00,"Apple Booked Less Revenue From iPhones and Macs, More From Services",0.44,0.0,0.934,0.066
+AAPL,2023-08-03,2023-08-03T20:44:00+00:00,Apple Earnings Top Street As Services Revenues Offset iPhone Slump,0.0,0.0,1.0,0.0
+AAPL,2023-08-03,2023-08-03T20:31:39+00:00,"Apple profit tops Wall Street targets, strong services counter weaker iPhone",0.993,0.021,0.89,0.089
+AAPL,2023-08-03,2023-08-03T20:05:30+00:00,Disney's Winning Playbook,1.0,0.024,0.77,0.205
+AAPL,2023-08-03,2023-08-03T19:40:03+00:00,"Dow futures trade higher as Apple, Amazon report",0.44,0.024,0.934,0.041
+AAPL,2023-08-03,2023-08-03T16:05:13+00:00,Stock market today: Dow ends lower as Treasury yields jump ahead of jobs report,0.723,0.071,0.843,0.086
+AAPL,2023-08-03,2023-08-03T14:48:09+00:00,"S&amp;P 500 off session lows on dip buying in chips ahead of Apple, Amazon earnings",0.985,0.08,0.794,0.126
+AAPL,2023-08-03,2023-08-03T13:53:49+00:00,"Dow Jones Falls After Jobless Claims; Amazon, Apple Earnings Due",-0.296,0.118,0.813,0.069
+AAPL,2023-08-03,2023-08-03T13:44:50+00:00,GLOBAL MARKETS-Shares stumble as US yields rise; sterling dips after BoE rate hike,0.382,0.064,0.86,0.076
+AAPL,2023-08-03,2023-08-03T13:37:49+00:00,Apple To Reportedly Shift 20% Of iPhone 15 Production To India As It Further Cuts China Reliance,0.979,0.025,0.885,0.089
+AAPL,2023-08-03,2023-08-03T13:21:00+00:00,Qualcomm Stock Stumbles After Earnings. How Analysts View Chances of Rebound.,-0.226,0.087,0.913,0.0
+AAPL,2023-08-03,2023-08-03T13:19:01+00:00,"Stocks snap win streak, Anheuser-Busch earnings, Apple &amp; Amazon: 3 Things",0.877,0.08,0.729,0.19
+AAPL,2023-08-03,2023-08-03T13:10:00+00:00,Apple’s Savings Accounts Reach $10 Billion Ahead of Earnings,0.128,0.076,0.83,0.094
+AAPL,2023-08-03,2023-08-03T13:05:00+00:00,A Bull Market Could Be Here: 2 Reasons to Buy Apple Stock,0.848,0.059,0.774,0.167
+AAPL,2023-08-03,2023-08-03T13:01:00+00:00,Apple Earnings Preview: Can Services Revenue and AI Hopes Offset Weaker iPhone Demand?,-0.402,0.15,0.85,0.0
+AAPL,2023-08-03,2023-08-03T12:37:27+00:00,"Buffett’s Berkshire Poised for Gains on Rate Hikes, Countering Slumps",0.994,0.063,0.822,0.115
+AAPL,2023-08-03,2023-08-03T11:36:59+00:00,Russia fines Apple for not deleting 'inaccurate' content on Ukraine conflict,-0.743,0.078,0.87,0.052
+AAPL,2023-08-03,2023-08-03T11:05:00+00:00,Better Artificial Intelligence Stock: Apple vs. Microsoft,0.904,0.0,0.82,0.18
+AAPL,2023-08-03,2023-08-03T10:27:00+00:00,Apple’s Earnings Can Boost the Stock Market. Here’s What It Needs to Deliver.,0.098,0.0,0.957,0.043
+AAPL,2023-08-03,2023-08-03T10:10:58+00:00,UPDATE 2-Russia fines Apple for not deleting 'inaccurate' content on Ukraine conflict,-0.823,0.077,0.877,0.046
+AAPL,2023-08-03,2023-08-03T10:04:19+00:00,Marketmind: Time for tech,0.893,0.067,0.832,0.102
+AAPL,2023-08-03,2023-08-03T10:01:00+00:00,"Stocks Slip, Treasury Yields Rise, Apple, Amazon Earnings On Deck, PayPal Slumps, Qualcomm Tumbles - 5 Things To Know",0.128,0.12,0.73,0.15
+AAPL,2023-08-03,2023-08-03T10:00:00+00:00,MORNING BID-Time for tech,0.893,0.067,0.832,0.102
+AAPL,2023-08-03,2023-08-03T09:18:21+00:00,Apple and Amazon Results Pose Tech Rally’s Toughest Hurdle Yet,0.483,0.093,0.808,0.1
+AAPL,2023-08-03,2023-08-03T08:00:10+00:00,"Qualcomm, PayPal and Roku fall premarket; DoorDash, Moderna rise",0.961,0.055,0.835,0.11
+AAPL,2023-08-03,2023-08-03T07:55:00+00:00,GLOBAL MARKETS-Shares stumble as US yields rise,0.968,0.049,0.85,0.101
+AAPL,2023-08-03,2023-08-03T07:36:21+00:00,Apple in India and Nintendo’s IP push,0.103,0.042,0.9,0.057
+AAPL,2023-08-03,2023-08-03T05:25:25+00:00,"Apple and Amazon to report, Adidas narrows loss forecast - what's moving markets",-0.973,0.09,0.842,0.068
+AAPL,2023-08-03,2023-08-03T04:12:52+00:00,European stocks retreat; BOE rate decision in focus,0.289,0.096,0.807,0.097
+AAPL,2023-11-02,2023-11-02T23:28:37+00:00,"Asian stocks rally tracking Wall St strength, easing Fed fears",0.997,0.021,0.816,0.162
+AAPL,2023-11-02,2023-11-02T23:19:53+00:00,Apple shares slide as holiday forecast misses expectations,0.987,0.033,0.871,0.096
+AAPL,2023-11-02,2023-11-02T23:18:39+00:00,Apple Warns of Sluggish Holiday Quarter After China Slowdown,0.842,0.044,0.897,0.059
+AAPL,2023-11-02,2023-11-02T22:42:25+00:00,"Asia Stocks to Rise, Apple Sales Hit US Futures: Markets Wrap",-0.875,0.068,0.87,0.062
+AAPL,2023-11-02,2023-11-02T22:06:00+00:00,Markets Up Big Again; Apple (AAPL) Beats Modestly,0.998,0.017,0.853,0.129
+AAPL,2023-11-02,2023-11-02T21:55:40+00:00,Apple Inc (AAPL) Reports Q4 2023 Earnings: iPhone Revenue Sets September Quarter Record,0.976,0.011,0.911,0.078
+AAPL,2023-11-02,2023-11-02T21:49:00+00:00,Apple Stock Slips Despite Earnings Beat. The Outlook Is a Problem.,0.344,0.0,0.946,0.054
+AAPL,2023-11-02,2023-11-02T21:27:00+00:00,"Apple earnings top forecasts, but sales fall for 4th straight quarter on Mac, China weakness",0.0,0.082,0.837,0.082
+AAPL,2023-11-02,2023-11-02T21:19:00+00:00,Apple Sales Decline as China Market Weighs on Earnings Report,0.226,0.0,0.942,0.058
+AAPL,2023-11-02,2023-11-02T21:18:35+00:00,Apple stock can't 'solely rely' on iPhone sales: Analyst,0.891,0.013,0.89,0.096
+AAPL,2023-11-02,2023-11-02T21:13:57+00:00,Dow Jones Roars As Palantir Spikes; Apple Falls Late With Jobs Report Due,0.649,0.063,0.706,0.231
+AAPL,2023-11-02,2023-11-02T21:12:47+00:00,Apple Stock Drops As Sales Fall For Fourth Straight Quarter,0.0,0.0,1.0,0.0
+AAPL,2023-11-02,2023-11-02T21:04:10+00:00,Apple's sales fall for the fourth straight quarter despite a strong start for latest iPhones,0.976,0.036,0.881,0.083
+AAPL,2023-11-02,2023-11-02T20:59:54+00:00,"Apple Services Revenue Climbs in Q4, Despite Companywide Revenue Decline",0.0,0.0,1.0,0.0
+AAPL,2023-11-02,2023-11-02T20:55:10+00:00,Breaking Down Apple's Fourth-Quarter Earnings,0.0,0.0,1.0,0.0
+AAPL,2023-11-02,2023-11-02T20:52:00+00:00,"Apple Beats After the Close, Capping a Low-Energy Rally",-0.402,0.062,0.91,0.028
+AAPL,2023-11-02,2023-11-02T20:33:55+00:00,Apple Stock Falls After Revenue Slips From Last Year’s Quarter,0.781,0.0,0.829,0.171
+AAPL,2023-11-02,2023-11-02T20:31:56+00:00,Apple beats quarterly estimates as iPhone sales edge up,0.995,0.002,0.91,0.088
+AAPL,2023-11-02,2023-11-02T20:30:57+00:00,Apple stock falls after cautious outlook overshadows record iPhone quarter,0.026,0.019,0.958,0.023
+AAPL,2023-11-02,2023-11-02T20:30:57+00:00,"Apple earnings top estimates, iPhone sales notch September-quarter record",0.915,0.015,0.935,0.05
+AAPL,2023-11-02,2023-11-02T20:30:00+00:00,Apple reports fourth quarter results,0.982,0.06,0.854,0.086
+AAPL,2023-11-02,2023-11-02T19:20:03+00:00,"Dow futures trade steady, Apple slips 2.9% after earnings",0.422,0.03,0.925,0.045
+AAPL,2023-11-02,2023-11-02T18:27:45+00:00,Wall Street Predicts These 3 Warren Buffett Stocks Will Soar 88% to 242%,0.999,0.033,0.822,0.144
+AAPL,2023-11-02,2023-11-02T17:07:39+00:00,Apple Set to Report Earnings After the Bell,0.296,0.0,0.965,0.035
+AAPL,2023-11-02,2023-11-02T16:46:46+00:00,PayPal Stock: Don’t Get Shaken Out of This Value-tastic Trade,0.957,0.087,0.811,0.103
+AAPL,2023-11-02,2023-11-02T14:39:57+00:00,Dow Jones Rallies 350 Points After Jobless Claims; Palantir Surges 21% As Apple Earnings Approach,0.422,0.054,0.827,0.119
+AAPL,2023-11-02,2023-11-02T14:30:00+00:00,Apple Earnings: Here’s What Wall Street Analysts Think of the Stock,0.0,0.0,1.0,0.0
+AAPL,2023-11-02,2023-11-02T14:30:00+00:00,Here’s What Wall Street Analysts Think of Apple Stock Ahead of Earnings,0.0,0.0,1.0,0.0
+AAPL,2023-11-02,2023-11-02T13:47:57+00:00,Dow Jones Rallies 250 Points After Jobless Claims; Palantir Surges 20% As Apple Earnings Approach,0.422,0.054,0.827,0.119
+AAPL,2023-11-02,2023-11-02T13:42:00+00:00,Apple Reports Earnings Today. They’ll Show How Well the iPhone 15 Is Selling.,0.827,0.0,0.867,0.133
+AAPL,2023-11-02,2023-11-02T13:37:18+00:00,Apple Stock Rises Ahead of Earnings Report,0.527,0.0,0.891,0.109
+AAPL,2023-11-02,2023-11-02T13:24:52+00:00,7 Secret Semiconductor Stocks Ready to Grab the Spotlight,1.0,0.021,0.833,0.145
+AAPL,2023-11-02,2023-11-02T12:00:00+00:00,3 Stocks to Hold for the Next 20 Years,-0.542,0.191,0.809,0.0
+AAPL,2023-11-02,2023-11-02T11:59:56+00:00,Posthaste: Outlook for Canadian dollar darkens in world full of risks,0.76,0.085,0.824,0.091
+AAPL,2023-11-02,2023-11-02T11:38:59+00:00,"Stocks rally, dollar slides as markets eye end to US rate hikes",0.727,0.038,0.908,0.055
+AAPL,2023-11-02,2023-11-02T11:25:19+00:00,Apple's December quarter outlook in focus ahead of latest earnings report,0.991,0.037,0.833,0.13
+AAPL,2023-11-02,2023-11-02T11:21:45+00:00,Trending tickers: Novo Nordisk | Moderna | Apple | Paypal,0.994,0.048,0.867,0.085
+AAPL,2023-11-02,2023-11-02T11:09:00+00:00,Qualcomm Signals Smartphone Recovery. Where Wall Street Sees the Stock Going.,0.296,0.0,0.879,0.121
+AAPL,2023-11-02,2023-11-02T10:31:00+00:00,"Apple earnings preview: iPhone 15 outlook in focus as China demand, US upgrade rates weaken",0.296,0.044,0.877,0.079
+AAPL,2023-11-02,2023-11-02T10:00:17+00:00,Column: Google's dominance affects us all. Why is its trial being held in secret?,0.994,0.04,0.892,0.068
+AAPL,2023-11-02,2023-11-02T09:30:00+00:00,"Proportion of India-made iPhones to double by 2024 while Foxconn's output in China to shrink, TF Securities analyst says",0.807,0.014,0.954,0.032
+AAPL,2023-11-02,2023-11-02T09:06:00+00:00,Apple's Loaded Product Lineup Headed Into the Holidays Is Good News for Investors,0.865,0.025,0.808,0.166
+AAPL,2023-11-02,2023-11-02T09:00:40+00:00,Apple hit by negative ‘groupthink mentality’,0.972,0.039,0.863,0.098
+AAPL,2023-11-02,2023-11-02T05:59:11+00:00,"Futures higher after Fed decision, Apple earnings ahead - what's moving markets",0.985,0.062,0.836,0.102
+AAPL,2023-11-02,2023-11-02T05:15:00+00:00,AI Is About to Remake the PC. These 2 Stocks Could Be Big Winners.,0.557,0.027,0.898,0.075
+AAPL,2023-11-02,2023-11-02T05:00:00+00:00,Apple Earnings Will Be Scoured for News on iPhone 15 Sales,0.827,0.0,0.867,0.133
+AAPL,2023-11-02,2023-11-02T04:45:59+00:00,"European stocks surge higher; Shell gains on buyback, BOE in spotlight",0.957,0.053,0.855,0.092
+AAPL,2023-11-02,2023-11-02T04:05:01+00:00,India probing iPhone hacking complaints by opposition politicians - minister,-0.936,0.075,0.898,0.027
+AAPL,2023-11-02,2023-11-02T03:59:31+00:00,India probing iPhone hacking complaints by opposition politicians - minister,-0.936,0.081,0.889,0.03
+AAPL,2023-11-02,2023-11-02T00:00:00+00:00,"
+Daniel Sparks  |  Nov 2, 2023
+",0.718,0.0,0.786,0.214
+AAPL,2024-02-01,2024-02-01T23:28:09+00:00,"Dow Jones Futures: Techs Rally On Meta, Amazon, China Woes Hit Apple; Jobs Report Looms",0.527,0.052,0.784,0.163
+AAPL,2024-02-01,2024-02-01T23:23:00+00:00,Facebook Parent Meta Initiates Dividend as Growth Continues,0.273,0.0,0.909,0.091
+AAPL,2024-02-01,2024-02-01T23:20:00+00:00,"Strong Session; After Hours Earnings from AAPL, AMZN, META &amp; More",0.998,0.02,0.833,0.147
+AAPL,2024-02-01,2024-02-01T23:16:40+00:00,"Apple CEO Cook: Gen. AI a 'huge opportunity' for Apple, announcements coming this year",0.992,0.009,0.902,0.089
+AAPL,2024-02-01,2024-02-01T23:16:40+00:00,"Apple's Cook: Gen. AI a 'huge opportunity' for Apple, announcements coming this year",0.992,0.009,0.903,0.089
+AAPL,2024-02-01,2024-02-01T23:07:57+00:00,"Amazon and Meta surge after results, while Apple drops",0.995,0.024,0.83,0.146
+AAPL,2024-02-01,2024-02-01T23:04:42+00:00,Apple Hints At a Coming AI Announcement,0.625,0.0,0.923,0.077
+AAPL,2024-02-01,2024-02-01T23:00:07+00:00,Here's What Key Metrics Tell Us About Apple (AAPL) Q1 Earnings,0.969,0.006,0.924,0.07
+AAPL,2024-02-01,2024-02-01T22:57:29+00:00,Apple Sees Weaker-Than-Expected Revenue in the Current Quarter,-0.5,0.095,0.868,0.037
+AAPL,2024-02-01,2024-02-01T22:46:59+00:00,Apple’s China Slump Deepens Even as Total Sales Grow Again,0.996,0.05,0.838,0.112
+AAPL,2024-02-01,2024-02-01T22:43:34+00:00,"Apple Tops December-Quarter Views, But China Sales Slide Worries Investors",0.671,0.0,0.807,0.193
+AAPL,2024-02-01,2024-02-01T22:40:03+00:00,Apple (AAPL) Q1 Earnings and Revenues Surpass Estimates,0.995,0.008,0.896,0.096
+AAPL,2024-02-01,2024-02-01T22:39:43+00:00,Apple 'needs to execute' as patience thins in Mag 7: Analyst,-0.077,0.026,0.95,0.024
+AAPL,2024-02-01,2024-02-01T22:20:44+00:00,Why the Magnificent Seven are 'critical' to the market,0.959,0.0,0.871,0.129
+AAPL,2024-02-01,2024-02-01T22:14:10+00:00,Zuckerberg announces $50bn payout for Meta shareholders amid child safety concerns,0.993,0.038,0.852,0.111
+AAPL,2024-02-01,2024-02-01T22:13:57+00:00,Checkmate! Buying Qualcomm Stock Is a Winning Move in 2024.,0.999,0.035,0.793,0.173
+AAPL,2024-02-01,2024-02-01T22:03:15+00:00,"More Big Tech Earnings Landed Today From Apple, Amazon and Meta Platforms",0.599,0.0,0.888,0.112
+AAPL,2024-02-01,2024-02-01T21:57:05+00:00,40 Richest Countries in the World by Per Capita Net Worth,1.0,0.01,0.76,0.23
+AAPL,2024-02-01,2024-02-01T21:57:00+00:00,"Apple Sales Rise in Holiday Quarter, Ending Streak of Shrinking Growth",0.0,0.0,1.0,0.0
+AAPL,2024-02-01,2024-02-01T21:54:09+00:00,Apple Inc (AAPL) Posts Record EPS in Q1; Services Hit New High,0.998,0.017,0.811,0.172
+AAPL,2024-02-01,2024-02-01T21:54:09+00:00,Warren Buffett's Apple Inc (AAPL) Posts Record EPS in Q1; Services Hit New High,0.998,0.017,0.815,0.169
+AAPL,2024-02-01,2024-02-01T21:53:49+00:00,Apple ends yearlong sales slump with slight revenue rise in holiday-season period but stock slips,0.99,0.032,0.861,0.106
+AAPL,2024-02-01,2024-02-01T21:48:28+00:00,Apple Stock Slips Despite Earnings Beat. Its Services Business Fell Short. China Sales Dropped 13%.,0.511,0.06,0.84,0.1
+AAPL,2024-02-01,2024-02-01T21:45:00+00:00,"Apple earnings top expectations, China revenue disappoints",0.765,0.0,0.918,0.082
+AAPL,2024-02-01,2024-02-01T21:42:07+00:00,"GLOBAL MARKETS-Stocks rally on earnings outlook, yields slip on banking concerns",0.992,0.062,0.821,0.117
+AAPL,2024-02-01,2024-02-01T21:12:49+00:00,Amazon stock pops as earnings beat,0.976,0.01,0.912,0.078
+AAPL,2024-02-01,2024-02-01T19:34:10+00:00,US STOCKS-Wall St rebounds from Fed-driven selloff; Big Tech earnings in view,0.986,0.039,0.869,0.093
+AAPL,2024-02-01,2024-02-01T18:41:48+00:00,"Unlike Alphabet That Seems Locked In The AI Battle, Microsoft Shined With Its Quarterly Results",0.99,0.017,0.889,0.094
+AAPL,2024-02-01,2024-02-01T18:07:38+00:00,Investors still need proof of profit from AI: Strategist,0.872,0.0,0.932,0.068
+AAPL,2024-02-01,2024-02-01T17:33:36+00:00,Meta to report Q4 earnings as generative AI takes center stage,0.993,0.028,0.866,0.106
+AAPL,2024-02-01,2024-02-01T17:26:25+00:00,Qualcomm Sees Modest 2024 Recovery After Glut; Shares Fall,0.973,0.063,0.845,0.092
+AAPL,2024-02-01,2024-02-01T16:50:00+00:00,Apple Appears Poised for an Earnings Suprise: ETFs in Focus,0.999,0.015,0.854,0.132
+AAPL,2024-02-01,2024-02-01T16:39:58+00:00,"Tech earnings: What Apple, Amazon, Meta need to succeed",0.992,0.016,0.911,0.072
+AAPL,2024-02-01,2024-02-01T16:34:31+00:00,Amazon earnings preview: Expect updates on Prime Video ads and the future of AI,0.981,0.023,0.896,0.081
+AAPL,2024-02-01,2024-02-01T16:28:24+00:00,The Road to a Trillion: 3 Stocks Next in Line for the Mega Milestone,0.998,0.042,0.84,0.119
+AAPL,2024-02-01,2024-02-01T16:28:06+00:00,Apple earnings: China could be 'source of weakness',0.586,0.042,0.883,0.076
+AAPL,2024-02-01,2024-02-01T16:23:46+00:00,Stock Market Today: Dow resumes record run as dip buyers pile into tech,0.992,0.045,0.824,0.131
+AAPL,2024-02-01,2024-02-01T16:22:28+00:00,Apple Bulks Up Vision Pro Content for Headset Launch,0.852,0.023,0.827,0.151
+AAPL,2024-02-01,2024-02-01T15:33:48+00:00,"Dow Jones Rises On Surprise Jobless Claims; Amazon, Apple To Report",0.586,0.098,0.642,0.26
+AAPL,2024-02-01,2024-02-01T15:16:26+00:00,"Amazon, Apple, and Meta earnings preview: What to expect",0.477,0.029,0.918,0.053
+AAPL,2024-02-01,2024-02-01T14:45:56+00:00,"More Big Tech Earnings Land Today: Apple, Amazon and Meta Are Coming",0.71,0.034,0.82,0.146
+AAPL,2024-02-01,2024-02-01T14:40:17+00:00,"Tata, Pegatron in partnership talks for iPhone assembly in India's Tamil Nadu - sources",0.735,0.014,0.948,0.038
+AAPL,2024-02-01,2024-02-01T13:58:48+00:00,"Dow Jones Futures Rise On Surprise Jobless Claims; Amazon, Apple To Report",0.586,0.098,0.642,0.26
+AAPL,2024-02-01,2024-02-01T13:46:04+00:00,GLOBAL MARKETS-Wall Street eyes Apple after Fed-fuelled flop,0.78,0.083,0.824,0.093
+AAPL,2024-02-01,2024-02-01T13:30:41+00:00,Apple Vision Pro: Game-Changing Device Or Pricey Misfire?,0.511,0.0,0.773,0.227
+AAPL,2024-02-01,2024-02-01T13:01:15+00:00,PayPal's Plan to 'Shock the World' Has Begun to Take Shape,0.999,0.049,0.817,0.134
+AAPL,2024-02-01,2024-02-01T12:47:37+00:00,Smartphone Demand Is in Focus for Apple. Qualcomm Had Mixed News.,0.141,0.018,0.955,0.026
+AAPL,2024-02-01,2024-02-01T12:19:21+00:00,"Stocks steady after Fed sell-off, Amazon and Apple earnings on tap: Yahoo Finance Live",0.823,0.008,0.925,0.068
+AAPL,2024-02-01,2024-02-01T11:55:48+00:00,"Apple, Amazon and Meta Take Spotlight as Stock Rally Wavers",0.993,0.072,0.819,0.109
+AAPL,2024-02-01,2024-02-01T09:27:00+00:00,"These Stocks Are Moving the Most Today: Apple, Amazon, Qualcomm, Align, Nextracker, MaxLinear, and More",0.681,0.0,0.828,0.172
+AAPL,2024-05-02,2024-05-02T22:51:30+00:00,"Apple Rallies on Upbeat Forecast, Record-Setting Stock Buyback",0.993,0.051,0.853,0.096
+AAPL,2024-05-02,2024-05-02T22:06:03+00:00,Apple’s $110 Billion Stock Buyback Plan is Largest in US History,0.993,0.04,0.8,0.16
+AAPL,2024-05-02,2024-05-02T22:06:01+00:00,"Apple sales fall less than expected, beating Wall Street estimates",-0.298,0.033,0.94,0.027
+AAPL,2024-05-02,2024-05-02T22:02:00+00:00,"Big Quarterly Beats After the Bell: AAPL, SQ, COIN &amp; More",0.995,0.04,0.829,0.13
+AAPL,2024-05-02,2024-05-02T21:47:57+00:00,Apple CEO Tim Cook boasts of future AI plans after earnings beat,0.975,0.0,0.936,0.064
+AAPL,2024-05-02,2024-05-02T21:45:10+00:00,"Dow Jones Rallies As Much As 350 Points After Wild Wednesday; Apple Up Ahead Of Earnings, Carvana Soars",0.557,0.0,0.827,0.173
+AAPL,2024-05-02,2024-05-02T21:40:07+00:00,Apple (AAPL) Beats Q2 Earnings and Revenue Estimates,0.994,0.012,0.897,0.091
+AAPL,2024-05-02,2024-05-02T21:37:54+00:00,Paramount has spent a decade as the source of buyout rumors. That might finally come to an end.,0.955,0.046,0.882,0.073
+AAPL,2024-05-02,2024-05-02T21:31:42+00:00,"Apple Edges Above Wall Street's Targets And Hikes Dividend, Share Buybacks",0.0,0.0,1.0,0.0
+AAPL,2024-05-02,2024-05-02T18:19:30+00:00,3 5G Technology Stocks With the Potential to Make You an Overnight Millionaire,0.998,0.017,0.861,0.123
+AAPL,2024-05-02,2024-05-02T16:51:10+00:00,Indexes Rebound After Wild Wednesday; Apple Up Ahead Of Earnings While Carvana Soars On Results,0.593,0.054,0.834,0.112
+AAPL,2024-05-02,2024-05-02T16:26:26+00:00,20 Fastest Growing Fintech Companies In 2024,0.999,0.029,0.861,0.11
+AAPL,2024-05-02,2024-05-02T16:20:34+00:00,25 Most Profitable Companies in the US,1.0,0.022,0.865,0.113
+AAPL,2024-05-02,2024-05-02T16:11:44+00:00,Top 25 Stocks in the S&amp;P 500 by Index Weight Right Now,0.999,0.045,0.843,0.112
+AAPL,2024-05-02,2024-05-02T15:04:00+00:00,Apple to extend new core technology fee to iPadOS apps,0.5,0.026,0.938,0.036
+AAPL,2024-05-02,2024-05-02T15:00:00+00:00,Qorvo Stock Is Tumbling After Earnings. There’s More Bad News for Apple.,0.0,0.0,1.0,0.0
+AAPL,2024-05-02,2024-05-02T14:32:00+00:00,US STOCKS-Wall Street rises as Fed rate-hike concerns alleviate,0.979,0.062,0.833,0.105
+AAPL,2024-05-02,2024-05-02T14:00:00+00:00,3 Stocks Gunning for Trillion-Dollar Status: The Players to Own Now,0.999,0.014,0.837,0.149
+AAPL,2024-05-02,2024-05-02T11:36:59+00:00,Dow Jones Futures Rise In Stock Market's Day 2 Fed Reaction; Carvana Skyrockets,0.527,0.0,0.839,0.161
+AAPL,2024-05-02,2024-05-02T11:25:33+00:00,Apple’s Earnings Come With a Low Bar and Big Buyback Hopes,0.998,0.06,0.822,0.118
+AAPL,2024-05-02,2024-05-02T11:05:00+00:00,7 D-Rated Tech Stocks to Dump Now,0.997,0.044,0.867,0.089
+AAPL,2024-05-02,2024-05-02T10:00:00+00:00,Chip Stocks on Sale: 3 Semiconductor Plays to Buy the Dip,0.998,0.017,0.857,0.125
+AAPL,2024-05-02,2024-05-02T10:00:00+00:00,The 3 Best ETFs to Beat the S&amp;P 500 Through 2030,0.998,0.02,0.846,0.134
+AAPL,2024-05-02,2024-05-02T08:05:00+00:00,Is Apple Stock Headed to $250? 1 Wall Street Analyst Thinks So.,0.512,0.078,0.84,0.082
+AAPL,2024-05-02,2024-05-02T00:00:00+00:00,"AAPL Stock Earnings: Apple Beats EPS, Beats Revenue for Q2 2024",0.296,0.0,0.909,0.091
+AAPL,2024-05-02,2024-05-02T00:00:00+00:00,"
+Danny Vena  |  May 2, 2024
+",0.0,0.0,1.0,0.0
+AAPL,2024-05-02,2024-05-02T00:00:00+00:00,7 D-Rated Tech Stocks to Dump Now,0.0,0.0,1.0,0.0
+AAPL,2024-08-01,2024-08-01T22:48:36+00:00,"Dow Jones Futures Fall As Apple, Amazon Follow Market Expectations Breaker; Nvidia Tumbles",-0.361,0.129,0.803,0.068
+AAPL,2024-08-01,2024-08-01T22:32:00+00:00,"Markets Tumble on... Recession Fears? Plus AAPL, AMZN, INTC Earnings",0.99,0.045,0.858,0.096
+AAPL,2024-08-01,2024-08-01T22:08:02+00:00,"Apple Beats June-Quarter Targets On Services, iPad Sales Strength",0.735,0.0,0.772,0.228
+AAPL,2024-08-01,2024-08-01T22:00:12+00:00,Apple (AAPL) Q3 Earnings: Taking a Look at Key Metrics Versus Estimates,0.961,0.006,0.933,0.061
+AAPL,2024-08-01,2024-08-01T20:00:00+00:00,3 Financial Stocks to Buy in August and Add on Dips,1.0,0.025,0.775,0.2
+AAPL,2024-08-01,2024-08-01T19:11:23+00:00,Apple Says US Smartphones Suit Has ‘No Relation to Reality’,-0.835,0.111,0.81,0.08
+AAPL,2024-08-01,2024-08-01T17:23:31+00:00,3 Warren Buffett Stocks to Buy Instead of Bank of America,0.999,0.017,0.861,0.122
+AAPL,2024-08-01,2024-08-01T17:13:09+00:00,Apple asks US judge to toss antitrust lawsuit,-0.778,0.196,0.758,0.047
+AAPL,2024-08-01,2024-08-01T16:40:54+00:00,Sales of this Apple Device Most Likely Grew. It’s Not the iPhone.,0.915,0.0,0.915,0.085
+AAPL,2024-08-01,2024-08-01T15:47:10+00:00,Apple to report Q3 earnings as Wall Street eyes China sales,0.992,0.006,0.915,0.079
+AAPL,2024-08-01,2024-08-01T14:14:42+00:00,"Apple, Amazon Results Are Crucial for Nasdaq 100’s Next Leg",0.998,0.035,0.852,0.113
+AAPL,2024-08-01,2024-08-01T13:55:54+00:00,"Dow Jones Rises On Jobless Claims; Meta Surges, Arm Dives On Earnings (Live Coverage)",0.0,0.0,1.0,0.0
+AAPL,2024-08-01,2024-08-01T12:26:41+00:00,How To Earn $500 A Month From Apple Stock Ahead Of Q3 Earnings,0.973,0.01,0.924,0.066
+AAPL,2024-08-01,2024-08-01T12:19:00+00:00,4 Top Tech Stocks to Buy on Soaring Hopes of September Rate Cut,0.999,0.011,0.825,0.164
+AAPL,2024-08-01,2024-08-01T12:14:55+00:00,Stock Gains in Premarket Trading,0.671,0.021,0.854,0.125
+AAPL,2024-08-01,2024-08-01T11:36:19+00:00,Is Apple Inc (NASDAQ:AAPL) the Best AI Tech Stock to Buy Now?,0.984,0.01,0.924,0.066
+AAPL,2024-08-01,2024-08-01T10:18:00+00:00,"The Zacks Analyst Blog Highlights Apple, Vanguard Information Technology ETF, MSCI Information Technology Index ETF, iShares US Technology ETF and iShares Russell Top 200 Growth ETF",0.999,0.016,0.853,0.131
+AAPL,2024-08-01,2024-08-01T04:35:39+00:00,"Fed guidance, BOE, Meta's results, Apple - what's moving markets",0.997,0.045,0.852,0.103
+AAPL,2024-08-01,2024-08-01T00:00:00+00:00,"
+Motley Fool Staff  |  Aug 1, 2024
+",-0.44,0.42,0.58,0.0
+AMZN,2025-02-06,2025-02-06T23:17:50+00:00,"Amazon, Echoing Microsoft, Says It Can’t Keep Up With AI Demand",0.993,0.039,0.853,0.108
+AMZN,2025-02-06,2025-02-06T18:19:56+00:00,Amazon is poised to dethrone Walmart in  quarterly revenue for the first time ever with a bombshell $187 billion in sales,0.998,0.017,0.84,0.143
+AMZN,2025-02-06,2025-02-06T16:13:47+00:00,Lyft Joins Amazon and Anthropic to Revolutionize AI Customer Service,0.659,0.071,0.836,0.093
+AMZN,2025-02-06,2025-02-06T15:30:30+00:00,Here are Recurve Capital’s Views on Amazon.com (AMZN),0.974,0.009,0.904,0.087
+AMZN,2025-02-06,2025-02-06T14:33:16+00:00,"You Can Buy Rivian's Van, But Don't Come A Knockin' On RIVN, Analyst Warns",0.681,0.0,0.917,0.083
+AMZN,2025-02-06,2025-02-06T14:30:40+00:00,"Stock market today: S&amp;P 500, Nasdaq edge higher with Amazon set to highlight earnings rush",0.989,0.075,0.819,0.106
+AMZN,2025-02-06,2025-02-06T13:41:48+00:00,"Amazon Earnings Due Today. Cloud Growth Is In Focus After Microsoft, Google Stumbles.",0.178,0.0,0.941,0.059
+AMZN,2025-02-06,2025-02-06T13:32:46+00:00,Why Trump's repeal of a trade loophole will hurt low-income and minority Americans,0.982,0.035,0.895,0.07
+AMZN,2025-02-06,2025-02-06T13:20:15+00:00,Is PDD Holdings (PDD) the Best E-Commerce Stock to Buy According to Analysts?,0.994,0.017,0.899,0.084
+AMZN,2025-02-06,2025-02-06T13:00:00+00:00,These People Turned AirPods Into Hearing Aids. Here Are the Pros and Cons.,0.318,0.065,0.816,0.118
+AMZN,2025-02-06,2025-02-06T13:00:00+00:00,Buy This Tech Stock (Shopify) Down 25% Before Earnings?,0.997,0.02,0.858,0.122
+AMZN,2025-02-06,2025-02-06T12:20:00+00:00,Buy Amazon Ahead of Earnings Today on Strong EPS Estimate Revisions,0.999,0.007,0.81,0.183
+AMZN,2025-02-06,2025-02-06T12:08:54+00:00,Q3 2025 Bark Inc Earnings Call,1.0,0.017,0.801,0.181
+AMZN,2025-02-06,2025-02-06T12:00:23+00:00,Big Tech's CapEx spending growth exceeding revenue growth,0.818,0.0,0.949,0.051
+AMZN,2025-02-06,2025-02-06T11:22:39+00:00,"Trending tickers: Amazon, Qualcomm, Arm, Nissan and AstraZeneca",0.996,0.016,0.894,0.09
+AMZN,2025-02-06,2025-02-06T10:47:51+00:00,"Amazon Cloud Needs to Deliver After Microsoft, Alphabet Misses",0.997,0.051,0.827,0.121
+AMZN,2025-02-06,2025-02-06T10:34:00+00:00,"The Zacks Analyst Blog Highlights Amazon, Bank of America, Caterpillar, NVE and bioAffinity",0.999,0.033,0.821,0.146
+AMZN,2025-02-06,2025-02-06T09:22:00+00:00,"The ""Magnificent Seven"" Stocks Could Help This Vanguard ETF Turn $400 per Month Into $1 Million",0.999,0.031,0.828,0.141
+AMZN,2025-02-06,2025-02-06T09:05:25+00:00,"Futures higher, Amazon to report, earnings deluge - what's moving markets",0.86,0.072,0.841,0.088
+AMZN,2025-02-06,2025-02-06T08:10:14+00:00,"Shein, Temu Retailers Slapped With 30% Levy on US-Bound Goods",-0.975,0.077,0.866,0.057
+AMZN,2025-02-06,2025-02-06T06:00:37+00:00,The most popular stocks and funds for investors in January,0.999,0.036,0.827,0.137
+AMZN,2025-02-06,2025-02-06T00:00:00+00:00,"Amazon EPS Jumps 86%, Beats Forecasts",0.477,0.071,0.743,0.186
+GOOGL,2023-07-25,2023-07-25T23:59:30+00:00,AI lesson for Microsoft and Google: Spend money to make money,0.877,0.02,0.927,0.053
+GOOGL,2023-07-25,2023-07-25T23:49:00+00:00,Google and Microsoft Paying Big to Play in AI,0.927,0.0,0.822,0.178
+GOOGL,2023-07-25,2023-07-25T23:42:05+00:00,Alphabet’s digital advertising business shows signs of resilience,0.586,0.033,0.869,0.098
+GOOGL,2023-07-25,2023-07-25T23:22:00+00:00,Google Shakes Up Top Finance Role as It Posts Accelerating Growth,0.671,0.0,0.744,0.256
+GOOGL,2023-07-25,2023-07-25T23:00:00+00:00,Elon Musk Pursues Banking in Wake of Rivals’ Failed Attempts,0.99,0.057,0.853,0.09
+GOOGL,2023-07-25,2023-07-25T22:00:02+00:00,"Compared to Estimates, Alphabet (GOOGL) Q2 Earnings: A Look at Key Metrics",0.969,0.0,0.944,0.056
+GOOGL,2023-07-25,2023-07-25T22:00:00+00:00,"Cavalcade of Earnings: MSFT, GOOGL, SNAP &amp; More",0.999,0.023,0.812,0.166
+GOOGL,2023-07-25,2023-07-25T21:53:34+00:00,Alphabet Stock Is Soaring After Earnings. Is GOOGL Stock a Buy Now?,0.077,0.055,0.882,0.063
+GOOGL,2023-07-25,2023-07-25T21:51:59+00:00,"Microsoft, Google Are Key Earnings Movers Late After S&amp;P 500 Hits New High; Fed Rate Hike Due",0.0,0.0,1.0,0.0
+GOOGL,2023-07-25,2023-07-25T21:46:00+00:00,Alphabet Spikes on Earnings. Its CFO Is Getting a New Role.,0.7,0.0,0.791,0.209
+GOOGL,2023-07-25,2023-07-25T21:25:08+00:00,Alphabet (GOOGL) Q2 Earnings and Revenues Surpass Estimates,0.996,0.01,0.886,0.104
+GOOGL,2023-07-25,2023-07-25T21:23:50+00:00,"UPS-Teamster deal, PacWest merger, Alphabet exec changeup: Top stories",0.305,0.05,0.895,0.056
+GOOGL,2023-07-25,2023-07-25T21:15:05+00:00,Alphabet Inc. (GOOG) Q2 Earnings and Revenues Surpass Estimates,0.996,0.01,0.884,0.106
+GOOGL,2023-07-25,2023-07-25T21:14:54+00:00,Microsoft becoming 'Death Star' of tech while optimizing faster into AI: Strategist,0.998,0.023,0.866,0.112
+GOOGL,2023-07-25,2023-07-25T21:02:51+00:00,Google defies ChatGPT threat as sales jump,1.0,0.065,0.844,0.091
+GOOGL,2023-07-25,2023-07-25T20:47:10+00:00,"Google Earnings, Revenue Beat Estimates As Porat Promoted To President",0.361,0.0,0.884,0.116
+GOOGL,2023-07-25,2023-07-25T20:37:00+00:00,"All Eyes Are on Alphabet, Microsoft, but Will Buying Fatigue Set In?",-0.078,0.053,0.903,0.044
+GOOGL,2023-07-25,2023-07-25T20:30:55+00:00,"Alphabet’s longest-serving CFO Ruth Porat promoted, stock surges over 6% on earnings beat",0.99,0.0,0.86,0.14
+GOOGL,2023-07-25,2023-07-25T20:29:41+00:00,Google rebounds from unprecedented drop in ad revenue with a resurgence that pushes stock higher,0.99,0.02,0.884,0.096
+GOOGL,2023-07-25,2023-07-25T20:22:00+00:00,"Google Surges On Q2 Earnings Beat, New Role For CFO Ruth Porat",0.318,0.0,0.916,0.084
+GOOGL,2023-07-25,2023-07-25T19:00:33+00:00,"Meta exec Nick Clegg on AI: ""I definitely think you need regulation""",0.952,0.031,0.893,0.075
+GOOGL,2023-07-25,2023-07-25T18:46:03+00:00,"Dow futures slip as Microsoft, Alphabet report earnings",0.902,0.017,0.924,0.059
+GOOGL,2023-07-25,2023-07-25T18:04:38+00:00,US STOCKS-Wall Street climbs on Big Tech enthusiasm,0.997,0.024,0.832,0.145
+GOOGL,2023-07-25,2023-07-25T16:51:36+00:00,Stock market today: Dow extends win streak as tech shines ahead of earnings,0.993,0.022,0.866,0.112
+GOOGL,2023-07-25,2023-07-25T16:43:59+00:00,"Meta earnings preview: Ads, AI, and Threads to take center stage",0.992,0.008,0.904,0.088
+GOOGL,2023-07-25,2023-07-25T16:36:00+00:00,Google Is Expected to Post Accelerating Growth as Online Ads Recover,0.671,0.0,0.744,0.256
+GOOGL,2023-07-25,2023-07-25T16:23:18+00:00,"US STOCKS-Wall Street climbs ahead of Big Tech results, Fed rate hike",0.994,0.035,0.846,0.12
+GOOGL,2023-07-25,2023-07-25T16:03:59+00:00,ChatGPT now on Android in some countries including US,0.967,0.0,0.851,0.149
+GOOGL,2023-07-25,2023-07-25T15:12:33+00:00,"S&amp;P 500 rises on tech strength ahead of Microsoft, Alphabet Results",0.961,0.018,0.912,0.07
+GOOGL,2023-07-25,2023-07-25T14:46:24+00:00,"Dow Jones, Nasdaq Rise As Earnings Roll; Fed Meeting, Microsoft, Google In Focus",0.0,0.0,1.0,0.0
+GOOGL,2023-07-25,2023-07-25T14:37:49+00:00,"Alphabet earnings: What to watch for as Google parent gives update on AI, search",0.637,0.0,0.874,0.126
+GOOGL,2023-07-25,2023-07-25T14:25:14+00:00,"US STOCKS-Nasdaq, S&amp;P 500 climb ahead of Big Tech results, Fed rate hike",0.993,0.027,0.863,0.11
+GOOGL,2023-07-25,2023-07-25T13:37:24+00:00,"Dow Jones Dips, Nasdaq Rises As Earnings Roll; Fed Meeting, Microsoft, Google In Focus",0.0,0.0,1.0,0.0
+GOOGL,2023-07-25,2023-07-25T13:19:13+00:00,"GM &amp; Spotify results, big day for earnings: Top stories",0.44,0.034,0.87,0.096
+GOOGL,2023-07-25,2023-07-25T12:00:15+00:00,Is Alphabet Inc.'s (NASDAQ:GOOGL) Recent Stock Performance Tethered To Its Strong Fundamentals?,0.999,0.004,0.829,0.167
+GOOGL,2023-07-25,2023-07-25T11:30:34+00:00,U.S. stocks were rising as Microsoft and Alphabet kick off tech earnings,0.988,0.022,0.867,0.111
+GOOGL,2023-07-25,2023-07-25T11:30:00+00:00,"Amesite Announces Integration Capability with LMS Platforms, Bringing AI to Organizations with Existing Contract Commitments",0.979,0.022,0.897,0.081
+GOOGL,2023-07-25,2023-07-25T11:07:41+00:00,"FOREX-Euro slips further on gloomy data, China's yuan surges",0.968,0.031,0.898,0.072
+GOOGL,2023-07-25,2023-07-25T10:49:44+00:00,Top 20 Electronic Gadgets for a Smart Home,1.0,0.02,0.775,0.205
+GOOGL,2023-07-25,2023-07-25T10:46:51+00:00,"Dow Jones Futures Rise As Dow Rides Win Streak; Fed Meeting, Tech Titans On Tap",0.44,0.08,0.759,0.16
+GOOGL,2023-07-25,2023-07-25T10:42:00+00:00,Microsoft and Alphabet Earnings Are Critical for This Stock Market Rally. Here’s Why.,-0.527,0.173,0.827,0.0
+GOOGL,2023-07-25,2023-07-25T10:30:00+00:00,2 Cybersecurity Stocks You Can Buy and Hold for the Next Decade,0.0,0.0,1.0,0.0
+GOOGL,2023-07-25,2023-07-25T10:06:15+00:00,15 Most Walkable Cities in the US,0.999,0.006,0.899,0.094
+GOOGL,2023-07-25,2023-07-25T10:02:00+00:00,"Stocks Mixed, General Motors, General Electric, Google, Microsoft Earnings On Deck - 5 Things To Know",0.743,0.028,0.81,0.162
+GOOGL,2023-07-25,2023-07-25T10:00:00+00:00,MORNING BID AMERICAS-Big Tech litmus test as Fed gathers,0.967,0.049,0.868,0.084
+GOOGL,2023-07-25,2023-07-25T09:49:09+00:00,20 Most Trusted Professions in America,1.0,0.032,0.716,0.251
+GOOGL,2023-07-25,2023-07-25T09:40:45+00:00,"AI’s Grip on Tech Set for Test With Microsoft, Alphabet Earnings",0.976,0.04,0.894,0.066
+GOOGL,2023-07-25,2023-07-25T09:37:00+00:00,"These Stocks Are Moving the Most Today: F5, Logitech, Cadence Design, GE, GM, Microsoft, Alphabet, and More",0.772,0.0,0.811,0.189
+GOOGL,2023-07-25,2023-07-25T09:32:00+00:00,New Investor? Buy These 2 Growth Stocks,0.625,0.0,0.796,0.204
+GOOGL,2023-07-25,2023-07-25T09:30:00+00:00,Inside Google’s scramble to reinvent its $160 billion search business—and survive the A.I. revolution,1.0,0.057,0.841,0.102
+GOOGL,2025-02-04,2025-02-04T23:23:17+00:00,"Alphabet reverses ban on AI use for weapons, following Palantir",-0.494,0.055,0.898,0.047
+GOOGL,2025-02-04,2025-02-04T23:09:12+00:00,"AMD, Alphabet fall after Q4 results: Biggest earnings takeaways",-0.836,0.07,0.909,0.02
+GOOGL,2025-02-04,2025-02-04T23:05:26+00:00,"AI data center play 'reinforced' by Alphabet, Microsoft spending",0.402,0.046,0.897,0.056
+GOOGL,2025-02-04,2025-02-04T22:45:00+00:00,Alphabet stock falls after missing revenue expectations despite strong momentum,0.992,0.019,0.882,0.099
+GOOGL,2025-02-04,2025-02-04T22:38:00+00:00,Alphabet Revenue Misses Expectations. The Stock Is Down Sharply.,0.026,0.086,0.824,0.09
+GOOGL,2025-02-04,2025-02-04T22:30:56+00:00,Google Earnings Edge By Estimates As 2025 Capital Spending Outlook Spooks Wall Street,0.0,0.0,1.0,0.0
+GOOGL,2025-02-04,2025-02-04T22:30:03+00:00,Alphabet (GOOGL) Reports Q4 Earnings: What Key Metrics Have to Say,0.979,0.0,0.931,0.069
+GOOGL,2025-02-04,2025-02-04T22:17:34+00:00,Alphabet expands CapEx forecast amid Cloud's Q4 revenue miss,0.566,0.055,0.88,0.065
+GOOGL,2025-02-04,2025-02-04T22:10:07+00:00,Alphabet (GOOGL) Beats Q4 Earnings and Revenue Estimates,0.995,0.005,0.899,0.095
+GOOGL,2025-02-04,2025-02-04T22:10:06+00:00,Alphabet Inc. (GOOG) Q4 Earnings and Revenues Top Estimates,0.995,0.01,0.892,0.098
+GOOGL,2025-02-04,2025-02-04T21:46:57+00:00,Alphabet posts Q4 revenue miss on light cloud revenue; shares fall in afterhours,0.026,0.05,0.895,0.055
+GOOGL,2025-02-04,2025-02-04T21:37:22+00:00,Alphabet Fourth-Quarter Revenue Misses View; Shares Decline After Hours,0.0,0.0,1.0,0.0
+GOOGL,2025-02-04,2025-02-04T21:35:56+00:00,Google's rising holiday's season ad sales aren't enough to ease worries about AI letdown,0.993,0.053,0.828,0.118
+GOOGL,2025-02-04,2025-02-04T21:34:34+00:00,Is Alphabet Inc. (GOOGL) One of Bill Ackman’s Top Stock Picks?,0.995,0.008,0.913,0.079
+GOOGL,2025-02-04,2025-02-04T21:13:38+00:00,Alphabet’s (NASDAQ:GOOGL) Q4 Earnings Results: Revenue In Line With Expectations But Stock Drops,0.999,0.017,0.845,0.138
+GOOGL,2025-02-04,2025-02-04T21:01:34+00:00,"Stock market today: Dow, S&amp;P 500, Nasdaq recover as traders assess tariff developments, new jobs data",0.998,0.057,0.862,0.082
+GOOGL,2025-02-04,2025-02-04T18:37:39+00:00,How To Earn $500 A Month From Alphabet Stock Ahead Of Q4 Earnings (CORRECTED),0.986,0.005,0.915,0.079
+GOOGL,2025-02-04,2025-02-04T10:47:13+00:00,"Trending tickers: Alphabet, Tesla, Palantir, Super Micro Computer and Vodafone",0.997,0.048,0.846,0.106
+GOOGL,2025-02-04,2025-02-04T08:59:35+00:00,China Hits Back Against Trump’s Tariffs With Targeted Actions,-0.652,0.06,0.875,0.065
+GOOGL,2025-02-04,2025-02-04T07:01:00+00:00,Alphabet Earnings Could Provide Answers on AI and Cloud Concerns,0.296,0.0,0.965,0.035
+GOOGL,2025-02-04,2025-02-04T06:58:53+00:00,Gold steady near record high as Trump starts US-China trade war,-0.962,0.11,0.816,0.073
+GOOGL,2025-02-04,2025-02-04T06:04:39+00:00,"China announces measures against Google, other US firms, as trade tensions escalate",0.128,0.039,0.918,0.043
+GOOGL,2025-02-04,2025-02-04T05:57:13+00:00,Copper Pares Gain as US and China Exchange Blows in Trade Fight,0.795,0.058,0.855,0.087
+GOOGL,2025-02-04,2025-02-04T00:50:40+00:00,"Stock market today: Dow, S&amp;P 500, Nasdaq futures edge lower as China hits back on tariffs",0.67,0.059,0.869,0.072
+GOOGL,2025-02-04,2025-02-04T00:00:00+00:00,Investing in Genomics Stocks,0.0,0.0,1.0,0.0
+GOOGL,2025-02-04,2025-02-04T00:00:00+00:00,"Alphabet earnings, Fed commentary, JOLTS data: What to Watch",-0.417,0.034,0.957,0.009
+META,2023-07-26,2023-07-26T21:29:06+00:00,Meta Is Lowering Its 2023 Capital Expenditure -- Could This Spell Trouble for Nvidia?,0.402,0.0,0.928,0.072
+META,2023-07-26,2023-07-26T20:05:00+00:00,Meta Reports Second Quarter 2023 Results,0.999,0.031,0.89,0.079
+META,2023-07-26,2023-07-26T19:33:14+00:00,It Will Take Much More Than A Snap For Snap To Overcome Its Challenges,0.997,0.05,0.807,0.143
+META,2023-07-26,2023-07-26T19:08:02+00:00,"Dow futures lift after Fed rate hike, Meta surges 7% after earnings",0.785,0.019,0.941,0.041
+META,2023-07-26,2023-07-26T15:11:05+00:00,Top 15 VR Games to Download and Play in 2023,0.996,0.04,0.868,0.092
+META,2023-07-26,2023-07-26T11:16:42+00:00,U.S. stocks were wobbling ahead of Fed's rate decision as big tech reports,0.572,0.066,0.863,0.07
+META,2023-07-26,2023-07-26T10:15:00+00:00,Mark Zuckerberg Just Gave These Stocks a Boost,0.813,0.056,0.728,0.216
+META,2023-07-26,2023-07-26T05:15:55+00:00,"Fed decision looms, Microsoft and Alphabet earnings - what's moving markets",0.98,0.044,0.875,0.081
+META,2023-07-26,2023-07-26T05:14:08+00:00,4 big analyst picks: Meta Platforms raised to Buy ahead of Q2,0.993,0.017,0.844,0.139
+MSFT,2023-07-25,2023-07-25T23:59:30+00:00,AI lesson for Microsoft and Google: Spend money to make money,0.877,0.02,0.927,0.053
+MSFT,2023-07-25,2023-07-25T23:49:00+00:00,Google and Microsoft Paying Big to Play in AI,0.927,0.0,0.822,0.178
+MSFT,2023-07-25,2023-07-25T23:22:37+00:00,Microsoft’s Azure Slowdown Overshadows Optimism About AI Growth,0.999,0.029,0.847,0.124
+MSFT,2023-07-25,2023-07-25T23:15:00+00:00,Microsoft Stock Slips Despite Strong Earnings. Guidance Fell Shy of Expectations.,0.026,0.075,0.849,0.076
+MSFT,2023-07-25,2023-07-25T22:42:05+00:00,"If You Can Only Buy 1 Long-Term Stock, It Better Be One of These Names",0.999,0.033,0.814,0.153
+MSFT,2023-07-25,2023-07-25T22:12:37+00:00,"Microsoft Cloud Business Boosts Results, But Shares Sink On Outlook",0.671,0.0,0.776,0.224
+MSFT,2023-07-25,2023-07-25T22:00:00+00:00,"Cavalcade of Earnings: MSFT, GOOGL, SNAP &amp; More",0.999,0.023,0.812,0.166
+MSFT,2023-07-25,2023-07-25T21:51:59+00:00,"Microsoft, Google Are Key Earnings Movers Late After S&amp;P 500 Hits New High; Fed Rate Hike Due",0.0,0.0,1.0,0.0
+MSFT,2023-07-25,2023-07-25T21:41:46+00:00,3 Metaverse Stocks You Better Be Buying on Each and Every Dip,0.999,0.006,0.843,0.152
+MSFT,2023-07-25,2023-07-25T21:35:37+00:00,Microsoft reports slowing cloud growth as it awaits AI revenue,0.66,0.0,0.748,0.252
+MSFT,2023-07-25,2023-07-25T21:35:09+00:00,Microsoft (MSFT) Surpasses Q4 Earnings and Revenue Estimates,0.995,0.005,0.899,0.096
+MSFT,2023-07-25,2023-07-25T21:14:54+00:00,Microsoft becoming 'Death Star' of tech while optimizing faster into AI: Strategist,0.998,0.023,0.866,0.112
+MSFT,2023-07-25,2023-07-25T21:07:54+00:00,Microsoft revenue rises despite slowing Azure cloud platform growth,0.936,0.0,0.845,0.155
+MSFT,2023-07-25,2023-07-25T20:37:00+00:00,"All Eyes Are on Alphabet, Microsoft, but Will Buying Fatigue Set In?",-0.078,0.053,0.903,0.044
+MSFT,2023-07-25,2023-07-25T20:22:47+00:00,Microsoft stock slips despite earnings beat,0.997,0.006,0.872,0.122
+MSFT,2023-07-25,2023-07-25T20:16:44+00:00,US STOCKS-AI mania drives Wall Street to higher close ahead of earnings,0.997,0.022,0.845,0.134
+MSFT,2023-07-25,2023-07-25T20:16:00+00:00,"These Stocks Moved the Most Today: GE, GM, RTX, Spotify, Alaska Air, and More",0.599,0.04,0.842,0.118
+MSFT,2023-07-25,2023-07-25T20:14:36+00:00,"Microsoft reports $20.1B quarterly profit as it promises to lead ""the new AI platform shift""",0.988,0.038,0.858,0.103
+MSFT,2023-07-25,2023-07-25T20:09:07+00:00,"Microsoft stock drops as Azure growth slows, earnings top estimates",0.977,0.007,0.923,0.07
+MSFT,2023-07-25,2023-07-25T19:00:33+00:00,"Meta exec Nick Clegg on AI: ""I definitely think you need regulation""",0.952,0.031,0.893,0.075
+MSFT,2023-07-25,2023-07-25T18:55:00+00:00,Why Meta Platforms Stock Got Upgraded Just One Day Before Earnings,0.572,0.0,0.734,0.266
+MSFT,2023-07-25,2023-07-25T18:46:03+00:00,"Dow futures slip as Microsoft, Alphabet report earnings",0.902,0.017,0.924,0.059
+MSFT,2023-07-25,2023-07-25T16:51:36+00:00,Stock market today: Dow extends win streak as tech shines ahead of earnings,0.993,0.022,0.866,0.112
+MSFT,2023-07-25,2023-07-25T16:33:48+00:00,Microsoft rolls Bing Chat out to a wider audience,0.934,0.034,0.887,0.078
+MSFT,2023-07-25,2023-07-25T16:26:24+00:00,"Ron DeSantis Escapes Car Accident Unhurt En Route To Campaign Event, TikTok Takes On Twitter, Analysts Expect Nvidia's AI Revenues To Reach $300B In Five Years: Today's Top Stories",0.979,0.066,0.85,0.084
+MSFT,2023-07-25,2023-07-25T16:00:00+00:00,"Microsoft Earnings Have Been Hurt by Cooling Software Demand, Boosted by AI",0.44,0.0,0.854,0.146
+MSFT,2023-07-25,2023-07-25T15:55:21+00:00,PayPal Uses AI To Improve Its Productivity,0.999,0.037,0.792,0.17
+MSFT,2023-07-25,2023-07-25T15:12:33+00:00,"S&amp;P 500 rises on tech strength ahead of Microsoft, Alphabet Results",0.961,0.018,0.912,0.07
+MSFT,2023-07-25,2023-07-25T14:46:24+00:00,"Dow Jones, Nasdaq Rise As Earnings Roll; Fed Meeting, Microsoft, Google In Focus",0.0,0.0,1.0,0.0
+MSFT,2023-07-25,2023-07-25T14:37:42+00:00,"7 Top AI Companies Including Microsoft, Amazon, and Alphabet Signed a Safety Pact: Here's What It Means",0.477,0.0,0.829,0.171
+MSFT,2023-07-25,2023-07-25T14:25:14+00:00,"US STOCKS-Nasdaq, S&amp;P 500 climb ahead of Big Tech results, Fed rate hike",0.993,0.027,0.863,0.11
+MSFT,2023-07-25,2023-07-25T14:23:00+00:00,3 Robinhood Stocks to Buy and Hold Forever,0.922,0.0,0.831,0.169
+MSFT,2023-07-25,2023-07-25T13:40:41+00:00,Microsoft earnings preview: Focus on cloud rebound and AI,0.891,0.027,0.911,0.061
+MSFT,2023-07-25,2023-07-25T13:37:24+00:00,"Dow Jones Dips, Nasdaq Rises As Earnings Roll; Fed Meeting, Microsoft, Google In Focus",0.0,0.0,1.0,0.0
+MSFT,2023-07-25,2023-07-25T13:19:13+00:00,"GM &amp; Spotify results, big day for earnings: Top stories",0.44,0.034,0.87,0.096
+MSFT,2023-07-25,2023-07-25T12:52:00+00:00,5 Forever Dividend Stocks,0.71,0.0,0.867,0.133
+MSFT,2023-07-25,2023-07-25T11:36:51+00:00,10 Best Growth Mutual Funds and Their Latest Top Picks,0.999,0.03,0.812,0.158
+MSFT,2023-07-25,2023-07-25T11:35:00+00:00,Schwab Is Not SVB,0.0,0.0,1.0,0.0
+MSFT,2023-07-25,2023-07-25T11:30:34+00:00,U.S. stocks were rising as Microsoft and Alphabet kick off tech earnings,0.988,0.022,0.867,0.111
+MSFT,2023-07-25,2023-07-25T11:25:01+00:00,Analysts Are Increasing Price Targets of These 10 Stocks,1.0,0.024,0.827,0.149
+MSFT,2023-07-25,2023-07-25T11:00:00+00:00,Could the Recent AI Move by Microsoft and Meta Be a Red Flag for Nvidia?,0.0,0.0,1.0,0.0
+MSFT,2023-07-25,2023-07-25T10:46:51+00:00,"Dow Jones Futures Rise As Dow Rides Win Streak; Fed Meeting, Tech Titans On Tap",0.44,0.08,0.759,0.16
+MSFT,2023-07-25,2023-07-25T10:42:00+00:00,Microsoft and Alphabet Earnings Are Critical for This Stock Market Rally. Here’s Why.,-0.527,0.173,0.827,0.0
+MSFT,2023-07-25,2023-07-25T10:02:00+00:00,"Stocks Mixed, General Motors, General Electric, Google, Microsoft Earnings On Deck - 5 Things To Know",0.743,0.028,0.81,0.162
+MSFT,2023-07-25,2023-07-25T10:00:00+00:00,MORNING BID AMERICAS-Big Tech litmus test as Fed gathers,0.967,0.049,0.868,0.084
+MSFT,2023-07-25,2023-07-25T09:40:45+00:00,"AI’s Grip on Tech Set for Test With Microsoft, Alphabet Earnings",0.976,0.04,0.894,0.066
+MSFT,2023-07-25,2023-07-25T09:37:00+00:00,"These Stocks Are Moving the Most Today: F5, Logitech, Cadence Design, GE, GM, Microsoft, Alphabet, and More",0.772,0.0,0.811,0.189
+MSFT,2023-07-25,2023-07-25T09:30:00+00:00,Inside Google’s scramble to reinvent its $160 billion search business—and survive the A.I. revolution,1.0,0.057,0.841,0.102
+MSFT,2023-07-25,2023-07-25T09:20:00+00:00,"The Zacks Analyst Blog Highlights Microsoft, Alphabet, Synopsis, NetEase and Palantir",0.999,0.035,0.855,0.109
+MSFT,2023-07-25,2023-07-25T09:10:23+00:00,Trending tickers: Microsoft l Alphabet l LVMH l Unilever,0.997,0.03,0.852,0.118
+MSFT,2025-01-29,2025-01-29T23:01:24+00:00,NVIDIA stock gains after-hours as tech giants continue to pour money into AI,0.974,0.02,0.849,0.131
+MSFT,2025-01-29,2025-01-29T19:30:13+00:00,Not Just DeepSeek - Alibaba Unveils AI Model To Rival OpenAI's Operator,0.972,0.018,0.913,0.069
+MSFT,2025-01-29,2025-01-29T19:00:43+00:00,Yacktman Asset Management Significantly Reduces Booking Holdings Inc. Position,0.996,0.011,0.85,0.139
+MSFT,2025-01-29,2025-01-29T17:30:00+00:00,Big Tech's AI capex will be just as important as earnings results,0.972,0.026,0.868,0.106
+MSFT,2025-01-29,2025-01-29T17:25:37+00:00,DeepSeek clouds AI picture just as Big Tech is set to report earnings,0.988,0.029,0.889,0.082
+MSFT,2025-01-29,2025-01-29T16:57:05+00:00,NVIDIA stock back under pressure as DeepSeek questions persist,0.494,0.046,0.891,0.063
+MSFT,2025-01-29,2025-01-29T16:52:01+00:00,China's DeepSeek AI is raising US security concerns. Here's why.,0.95,0.024,0.887,0.089
+MSFT,2025-01-29,2025-01-29T16:13:40+00:00,"Microsoft, Meta Capex Outlooks Face Scrutiny as DeepSeek Emerges as AI Rival, Wedbush Says",0.0,0.0,1.0,0.0
+MSFT,2025-01-29,2025-01-29T16:07:29+00:00,DeepSeek's AI shakeup: Why Big Tech won’t cut spending,0.961,0.019,0.868,0.113
+MSFT,2025-01-29,2025-01-29T15:37:35+00:00,Microsoft Probes Chinese AI Startup DeepSeek Over Potential OpenAI Data Breach,0.939,0.044,0.846,0.11
+MSFT,2025-01-29,2025-01-29T15:16:00+00:00,"Mag 7 Earnings: Tesla, Microsoft &amp; Meta in Focus",1.0,0.012,0.856,0.132
+MSFT,2025-01-29,2025-01-29T14:48:00+00:00,It’s Not Just DeepSeek. A Guide to the Chinese AI Companies You Need to Know.,0.077,0.0,0.954,0.046
+MSFT,2025-01-29,2025-01-29T14:45:00+00:00,"Big Tech earnings: Will AI spend pay off for Meta, Microsoft, Tesla?",0.892,0.012,0.91,0.077
+MSFT,2025-01-29,2025-01-29T14:30:00+00:00,Microsoft to Report Q2 Earnings Today: ETFs to Watch,0.999,0.014,0.86,0.125
+MSFT,2025-01-29,2025-01-29T14:17:00+00:00,Microsoft’s Spending Is the Focus for Earnings. DeepSeek Changed the Game.,0.0,0.0,1.0,0.0
+MSFT,2025-01-29,2025-01-29T14:13:07+00:00,Alibaba Surges as AI Battle Heats Up; Nvidia Rebounds After Historic Loss,-0.869,0.094,0.861,0.044
+MSFT,2025-01-29,2025-01-29T14:12:58+00:00,"Big Tech earnings, Fed rate decision, ASML: 3 Things",0.836,0.008,0.937,0.055
+MSFT,2025-01-29,2025-01-29T14:12:07+00:00,Why Microsoft (MSFT) Is the Best Stock to Buy in 2025 for Beginners,0.995,0.016,0.893,0.091
+MSFT,2025-01-29,2025-01-29T13:50:47+00:00,"Report recommends CMA board consider probing AWS, Microsoft cloud services",0.992,0.021,0.871,0.109
+MSFT,2025-01-29,2025-01-29T13:28:04+00:00,"Microsoft Set to Gain as DeepSeek AI Slashes Costs, Analysts Say",0.971,0.03,0.826,0.144
+MSFT,2025-01-29,2025-01-29T12:27:00+00:00,"DeepSeek AI Fears Haunt Meta, Microsoft Earnings. What Stock Markets Need to See and 5 Other Things to Know Today.",-0.542,0.124,0.836,0.04
+MSFT,2025-01-29,2025-01-29T12:00:00+00:00,U.S. Businesses Already Love DeepSeek,-0.026,0.026,0.95,0.024
+MSFT,2025-01-29,2025-01-29T11:52:30+00:00,Microsoft Corporation (MSFT): Exploring AI Expansion with TikTok Acquisition Talks,0.996,0.038,0.837,0.125
+MSFT,2025-01-29,2025-01-29T11:27:00+00:00,"The Zacks Analyst Blog Highlights NVIDIA, Broadcom, Amphenol, Microsoft and Meta Platform",0.999,0.017,0.843,0.139
+MSFT,2025-01-29,2025-01-29T11:20:51+00:00,"Market Chatter: Microsoft, OpenAI Find Evidence DeepSeek Breached Rules in Developing AI Models",0.0,0.0,1.0,0.0
+MSFT,2025-01-29,2025-01-29T11:09:09+00:00,"DeepSeek's AI Breakthrough Sparks Microsoft, OpenAI Probe Into Possible Data Breach",0.81,0.029,0.906,0.065
+MSFT,2025-01-29,2025-01-29T11:05:16+00:00,"OpenAI's Next Move With Microsoft: Bigger Than Anyone Thinks, Says CEO Sam Altman",0.859,0.05,0.857,0.093
+MSFT,2025-01-29,2025-01-29T10:30:07+00:00,DeepSeek whammy shifts focus to Big Tech trio’s earnings reports,0.989,0.035,0.88,0.085
+MSFT,2025-01-29,2025-01-29T10:29:00+00:00,"These Stocks Are Moving the Most Today: ASML, Nvidia, Tesla, Microsoft, Meta, F5, LendingClub, and More",0.202,0.0,0.945,0.055
+MSFT,2025-01-29,2025-01-29T09:19:25+00:00,Wall Street stalls ahead of Fed decision as FTSE closes higher,1.0,0.049,0.848,0.103
+MSFT,2025-01-29,2025-01-29T09:07:58+00:00,"Tech earnings ahead, Fed decision, ASML reports - what's moving markets",-0.495,0.078,0.842,0.08
+MSFT,2025-01-29,2025-01-29T05:32:55+00:00,Jim Cramer on Microsoft Corporation (MSFT): ‘This Has Become A Battleground Stock’,0.96,0.076,0.833,0.091
+MSFT,2025-01-29,2025-01-29T00:00:00+00:00,Who Owns ChatGPT?,0.0,0.0,1.0,0.0
+NVDA,2024-02-21,2024-02-21T23:55:01+00:00,Nvidia Surges After AI Boom Shows No Signs of Letting Up,0.996,0.032,0.875,0.093
+NVDA,2024-02-21,2024-02-21T23:32:00+00:00,NVIDIA Earnings: Another Beat Delivered,0.991,0.013,0.864,0.123
+NVDA,2024-02-21,2024-02-21T23:30:43+00:00,Nvidia Reported Earnings Tonight. Its Shares Are Rising,0.511,0.0,0.896,0.104
+NVDA,2024-02-21,2024-02-21T23:12:49+00:00,"Nvidia stock surges after results, lifts other AI shares",0.974,0.017,0.886,0.097
+NVDA,2024-02-21,2024-02-21T23:04:25+00:00,Nvidia Adds UK to List of Governments Scrutinizing Its Business,0.0,0.06,0.88,0.06
+NVDA,2024-02-21,2024-02-21T23:04:00+00:00,NVIDIA Beats &amp; Raises in Q4; Late Trading +8%,0.997,0.036,0.84,0.124
+NVDA,2024-02-21,2024-02-21T23:01:16+00:00,"AMD, Super Micro, Palantir, Other AI Stocks Gain on Nvidia's Strong Quarter",0.904,0.0,0.804,0.196
+NVDA,2024-02-21,2024-02-21T22:50:48+00:00,Fed will be 'comfortable' in 2-3% inflation range: Strategist,0.832,0.011,0.918,0.071
+NVDA,2024-02-21,2024-02-21T22:45:49+00:00,Nvidia's revenue soars 265% year over year due to generative AI boom,0.997,0.01,0.852,0.138
+NVDA,2024-02-21,2024-02-21T22:40:44+00:00,How Nvidia's Q4 earnings set the stage for further dominance,0.923,0.014,0.929,0.057
+NVDA,2024-02-21,2024-02-21T22:40:10+00:00,Nvidia (NVDA) Tops Q4 Earnings and Revenue Estimates,0.996,0.005,0.891,0.104
+NVDA,2024-02-21,2024-02-21T22:30:00+00:00,Nvidia Reports Another Blowout Quarter -- This Is What Investors Should Know,-0.382,0.082,0.849,0.069
+NVDA,2024-02-21,2024-02-21T22:28:13+00:00,"Lucid, APA, stock reaction to Nvidia: After-hour movers",0.992,0.026,0.89,0.084
+NVDA,2024-02-21,2024-02-21T22:22:44+00:00,Nvidia Stock Jumps After CFO Says Demand ‘Far Exceeds’ Supply for Coming Chips,0.863,0.046,0.777,0.177
+NVDA,2024-02-21,2024-02-21T21:46:36+00:00,Nvidia to set the tone,0.979,0.06,0.837,0.103
+NVDA,2024-02-21,2024-02-21T21:40:21+00:00,3 Millionaire-Maker Robotics Stocks to Buy in February 2024,0.998,0.004,0.891,0.105
+NVDA,2024-02-21,2024-02-21T21:39:00+00:00,"Nvidia Q4 earnings beat, generative AI reaching a 'tipping point'",0.361,0.012,0.955,0.033
+NVDA,2024-02-21,2024-02-21T21:34:39+00:00,Nvidia Delivers Another Beat-And-Raise Quarter Fueled By AI Chips,0.0,0.0,1.0,0.0
+NVDA,2024-02-21,2024-02-21T21:26:39+00:00,"Nvidia results, forecast beat estimates across the board as China sales slow 'significantly'",0.727,0.019,0.933,0.048
+NVDA,2024-02-21,2024-02-21T21:26:01+00:00,Nvidia forecasts first-quarter revenue above estimates,0.978,0.026,0.846,0.128
+NVDA,2024-02-21,2024-02-21T21:20:00+00:00,NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2024,0.998,0.036,0.892,0.072
+NVDA,2024-02-21,2024-02-21T21:03:58+00:00,"US STOCKS-S&amp;P 500, Dow close slightly up; market awaits Nvidia results",0.96,0.068,0.838,0.095
+NVDA,2024-02-21,2024-02-21T20:57:17+00:00,15 States With the Best Unemployment Benefits in 2024,1.0,0.068,0.752,0.18
+NVDA,2024-02-21,2024-02-21T20:31:00+00:00,"Could Nvidia's Stock Price Hit $1,300? Some Options Traders Say Yes",0.542,0.0,0.919,0.081
+NVDA,2024-02-21,2024-02-21T20:29:58+00:00,"GLOBAL MARKETS-Stocks slip, yields rise as Fed fears cutting rates too soon",-0.957,0.082,0.866,0.052
+NVDA,2024-02-21,2024-02-21T20:00:29+00:00,US STOCKS-Equities down again on caution ahead of Nvidia earnings,0.975,0.061,0.846,0.093
+NVDA,2024-02-21,2024-02-21T19:22:00+00:00,Checking the Average Zacks Price Target for Nvidia's Stock Before Earnings,0.995,0.003,0.863,0.134
+NVDA,2024-02-21,2024-02-21T18:02:37+00:00,How markets react to Nvidia's earnings,0.361,0.0,0.973,0.027
+NVDA,2024-02-21,2024-02-21T18:00:33+00:00,"Aldi plans to create 5,500 jobs as shoppers switch to discounters",0.999,0.079,0.829,0.092
+NVDA,2024-02-21,2024-02-21T17:49:42+00:00,Nvidia’s High-Stakes Earnings Has Entire Market on Edge,0.989,0.048,0.857,0.094
+NVDA,2024-02-21,2024-02-21T17:37:33+00:00,ETFs: Are investors overexposed to stocks like Nvidia?,0.882,0.052,0.855,0.093
+NVDA,2024-02-21,2024-02-21T17:04:15+00:00,Amazon addition helps Dow stay 'relevant',0.989,0.005,0.912,0.083
+NVDA,2024-02-21,2024-02-21T16:59:17+00:00,"US STOCKS-Nasdaq tumbles ahead of AI-darling Nvidia's results, Fed minutes",0.988,0.038,0.872,0.09
+NVDA,2024-02-21,2024-02-21T16:45:00+00:00,Here’s What Wall Street Analysts Think of Nvidia Stock Ahead of Earnings,0.0,0.0,1.0,0.0
+NVDA,2024-02-21,2024-02-21T16:36:26+00:00,Tech Stocks Are Dragging Again,0.0,0.0,1.0,0.0
+NVDA,2024-02-21,2024-02-21T16:07:50+00:00,"GLOBAL MARKETS-Dollar steady, stocks slip ahead of Nvidia results",-0.758,0.061,0.89,0.05
+NVDA,2024-02-21,2024-02-21T15:57:54+00:00,"Stock Market Today: Dow Jones, S&amp;P 500 Retreat; All Eyes On Nvidia As Palo Alto Plummets",-0.718,0.207,0.793,0.0
+NVDA,2024-02-21,2024-02-21T15:50:00+00:00,Minutes of January FOMC Meet Expected Before Closing Bell,0.991,0.025,0.873,0.101
+NVDA,2024-02-21,2024-02-21T15:43:00+00:00,All Eyes on Nvidia Earnings: Here's What to Expect,0.998,0.007,0.889,0.103
+NVDA,2024-02-21,2024-02-21T15:23:52+00:00,Nvidia Teams Up with Google to Offer a New AI Model For Consumers,0.459,0.0,0.964,0.036
+NVDA,2024-02-21,2024-02-21T15:17:59+00:00,12 Best NYSE Penny Stocks To Buy,1.0,0.035,0.838,0.127
+NVDA,2024-02-21,2024-02-21T14:54:22+00:00,"Nvidia's Key Challenges, Opportunities With Earnings Due; Is Nvidia A Buy?",0.382,0.0,0.885,0.115
+NVDA,2024-02-21,2024-02-21T14:54:12+00:00,"This Hot AI Play And Nvidia Partner Tumbles On Weak Sales, Guidance",0.477,0.0,0.866,0.134
+NVDA,2024-02-21,2024-02-21T14:42:12+00:00,"Nvidia Stock Drops Before Earnings, and Super Micro Computer Stock Also Tumbles",0.866,0.077,0.816,0.107
+NVDA,2024-02-21,2024-02-21T14:40:12+00:00,Can Nvidia's earnings live up to the hype?,0.637,0.0,0.951,0.049
+NVDA,2024-02-21,2024-02-21T14:15:00+00:00,Nvidia Reports Earnings Today. This Is What Investors Should Expect.,-0.71,0.077,0.87,0.053
+NVDA,2024-02-21,2024-02-21T14:12:22+00:00,Nvidia: The market pulse,0.97,0.0,0.944,0.056
+NVDA,2024-02-21,2024-02-21T14:04:13+00:00,15 Best Least Shorted Stocks to Buy Now,1.0,0.022,0.872,0.106
+NVDA,2024-02-21,2024-02-21T14:02:44+00:00,"US STOCKS-Wall St set to retreat ahead of AI-darling Nvidia's results, Fed minutes",0.975,0.04,0.887,0.073
+NVDA,2024-02-21,2024-02-21T13:55:23+00:00,Stock Market Today: Dow Jones Futures Fall Ahead Of Today's Fed Minutes; Nvidia Earnings Next,0.0,0.0,1.0,0.0
+TSLA,2023-07-19,2023-07-19T23:38:34+00:00,Musk Says Tesla to Spend Over $1 Billion on Dojo Supercomputer,0.162,0.051,0.897,0.053
+TSLA,2023-07-19,2023-07-19T23:37:44+00:00,Why Is Tesla Stock Down After Earnings? Is TSLA Stock a Buy Now?,0.7,0.0,0.775,0.225
+TSLA,2023-07-19,2023-07-19T23:08:52+00:00,"Asian stocks muted, tech falls ahead of TSMC earnings",-0.915,0.082,0.869,0.049
+TSLA,2023-07-19,2023-07-19T22:32:54+00:00,"Dow Jones Futures Fall: Market Rally Hits Fresh 2023 Highs; Tesla Earnings Top, With Caveats",0.477,0.0,0.86,0.14
+TSLA,2023-07-19,2023-07-19T22:30:06+00:00,"Compared to Estimates, Tesla (TSLA) Q2 Earnings: A Look at Key Metrics",0.984,0.006,0.906,0.087
+TSLA,2023-07-19,2023-07-19T22:28:00+00:00,Tesla Profit Jumps 20% as Price Cuts Help Lift Deliveries,-0.883,0.191,0.75,0.059
+TSLA,2023-07-19,2023-07-19T22:16:29+00:00,Tesla Earnings Jump 20%; Elon Musk Says 'Autonomy' Will Make Sliding Margins 'Look Silly',0.44,0.0,0.879,0.121
+TSLA,2023-07-19,2023-07-19T22:15:00+00:00,"Full Slate of Q2 Earnings: TSLA, NFLX, IBM, UAL &amp; More",0.998,0.024,0.844,0.132
+TSLA,2023-07-19,2023-07-19T22:01:48+00:00,"Tesla earnings: EV maker has ""dominated the market"" despite difficult environment, analyst says",0.988,0.068,0.845,0.087
+TSLA,2023-07-19,2023-07-19T21:41:14+00:00,Tesla dented by Musk's electric car price war,0.949,0.072,0.824,0.105
+TSLA,2023-07-19,2023-07-19T21:37:17+00:00,"Netflix stock falls despite big subscriber growth, Tesla gross margins underperform",1.0,0.041,0.808,0.151
+TSLA,2023-07-19,2023-07-19T21:35:06+00:00,Tesla (TSLA) Beats Q2 Earnings and Revenue Estimates,0.995,0.005,0.898,0.096
+TSLA,2023-07-19,2023-07-19T21:21:36+00:00,Tesla profit margins slip as price cuts weigh on earnings,0.772,0.048,0.827,0.126
+TSLA,2023-07-19,2023-07-19T21:21:20+00:00,"United Airlines, Las Vegas Sands, Netflix, Tesla: Stocks moving in after-hours",0.0,0.0,1.0,0.0
+TSLA,2023-07-19,2023-07-19T21:14:00+00:00,"Top Analyst Just Compared Tesla to Apple In 2008 (Apple Is Up 3,873% Since)",0.7,0.0,0.921,0.079
+TSLA,2023-07-19,2023-07-19T21:02:54+00:00,"Dow Jones Futures: Market Rally Hits Fresh 2023 Highs; Tesla, Netflix Are Key Earnings Movers",0.477,0.0,0.86,0.14
+TSLA,2023-07-19,2023-07-19T20:41:00+00:00,"As Netflix, Tesla Earnings Land, We Enter a Game of High Expectations",0.25,0.0,0.938,0.063
+TSLA,2023-07-19,2023-07-19T20:40:51+00:00,"Tesla' income jumps 20%, but shares fall after hours amid profit concerns",0.994,0.032,0.839,0.129
+TSLA,2023-07-19,2023-07-19T20:34:00+00:00,Tesla Just Rolled Out a Big New Update Its Customers Will Love,0.625,0.0,0.928,0.072
+TSLA,2023-07-19,2023-07-19T20:31:25+00:00,"Tesla earnings beat estimates, but price cuts weigh on results",-0.824,0.103,0.816,0.082
+TSLA,2023-07-19,2023-07-19T20:24:55+00:00,Tesla Stock Wavers in Late Trading as Investors Eye Profits,0.296,0.0,0.896,0.104
+TSLA,2023-07-19,2023-07-19T20:19:47+00:00,Tesla earnings: EV maker reports Q2 revenue and earnings beat; Musk says Q3 production will decrease slightly,0.985,0.027,0.898,0.075
+TSLA,2023-07-19,2023-07-19T20:06:21+00:00,Tesla reports sequentially lower quarterly gross margin,0.485,0.088,0.814,0.098
+TSLA,2023-07-19,2023-07-19T19:08:02+00:00,"Dow futures slip as Tesla, Netflix report",0.625,0.029,0.929,0.042
+TSLA,2023-07-19,2023-07-19T17:49:00+00:00,Tesla Rival Brings on Bad News About Its Electric Vehicles,0.765,0.027,0.866,0.107
+TSLA,2023-07-19,2023-07-19T17:34:23+00:00,"3 EV Stocks to Buy to Turn $1,000 Into $1 Million",0.999,0.014,0.853,0.133
+TSLA,2023-07-19,2023-07-19T17:18:36+00:00,Tesla to hand over Musk's emails to JPMorgan in lawsuit over 2018 tweet,0.92,0.027,0.908,0.065
+TSLA,2023-07-19,2023-07-19T16:45:00+00:00,Individual Investors Load Up on Tesla Stock Ahead of Earnings,0.459,0.0,0.921,0.079
+TSLA,2023-07-19,2023-07-19T16:30:19+00:00,"New Car Market: Ford, Tesla Drop Prices by Up to 20% Thanks to Millions of Unwanted EVs",0.889,0.066,0.855,0.079
+TSLA,2023-07-19,2023-07-19T16:29:02+00:00,GM And Ford Are Having EV Difficulties,0.921,0.071,0.842,0.088
+TSLA,2023-07-19,2023-07-19T16:21:33+00:00,"Tesla Plans to Expand German Gigafactory, Creating Largest Car Plant in Europe",0.904,0.0,0.826,0.174
+TSLA,2023-07-19,2023-07-19T16:21:30+00:00,Investors shift focus to Big Tech earnings,0.994,0.041,0.84,0.12
+TSLA,2023-07-19,2023-07-19T16:16:30+00:00,S&amp;P 500 in 'terrific uptrend' as sectors reach record-highs: Analyst,0.0,0.0,1.0,0.0
+TSLA,2023-07-19,2023-07-19T16:00:00+00:00,Ex-Tesla Exec Secures $5 Billion Valuation On Battery Recycling Venture,0.558,0.035,0.921,0.044
+TSLA,2023-07-19,2023-07-19T15:58:00+00:00,North America Owners of These Electric Vehicles Just Got Great News,-0.856,0.121,0.879,0.0
+TSLA,2023-07-19,2023-07-19T15:28:00+00:00,Tesla Skeptic Turns Bullish,0.998,0.041,0.838,0.121
+TSLA,2023-07-19,2023-07-19T15:16:53+00:00,"S&amp;P 500 climbs as earnings season heats up ahead of Netflix, Tesla earnings",-0.421,0.067,0.873,0.06
+TSLA,2023-07-19,2023-07-19T15:08:42+00:00,"Tesla inventory, order backlog data signal a worrying demand picture",-0.876,0.045,0.934,0.021
+TSLA,2023-07-19,2023-07-19T14:54:59+00:00,Tesla Faces Profit Test After $540 Billion Rally,0.992,0.059,0.836,0.105
+TSLA,2023-07-19,2023-07-19T14:50:00+00:00,5 Big Cap Earnings Charts to Watch This Week,0.997,0.018,0.81,0.172
+TSLA,2023-07-19,2023-07-19T14:37:19+00:00,"Dow Jones Rises: Highly Shorted Carvana Surges On Guidance, Debt Deal; Tesla, Netflix Earnings Due",-0.052,0.09,0.827,0.083
+TSLA,2023-07-19,2023-07-19T14:30:01+00:00,Tesla Reports Earnings Today: What to Expect,0.0,0.0,1.0,0.0
+TSLA,2023-07-19,2023-07-19T14:27:45+00:00,"Cathie Wood’s ARK funds sell Tesla &amp; Coinbase, buys Twilio",0.677,0.0,0.859,0.141
+TSLA,2023-07-19,2023-07-19T14:18:00+00:00,"Tesla, Ford, and the EV Inventory Debate on Wall Street",0.265,0.096,0.75,0.153
+TSLA,2023-07-19,2023-07-19T14:01:37+00:00,Tesla chair Robyn Denholm joins Australian AI healthcare start-up,0.077,0.145,0.692,0.164
+TSLA,2023-07-19,2023-07-19T14:00:29+00:00,"Tesla Earnings Day: TSLA Upgraded, Rally Snubs Sellers As Cybertruck Takes Centerstage",-0.681,0.081,0.897,0.022
+TSLA,2023-07-19,2023-07-19T13:26:40+00:00,"Carvana debt deal, Goldman Sachs profit miss, Netflix &amp; Tesla earnings: Top stories",0.984,0.08,0.783,0.137
+TSLA,2023-07-19,2023-07-19T13:22:13+00:00,"Tesla Builds First Cybertruck, Ford Cuts F-150 Lightning Price",0.992,0.037,0.854,0.109
+TSLA,2023-07-19,2023-07-19T12:45:00+00:00,"Prediction: These 2 Growth Stocks Will Join Apple, Amazon, Alphabet, Nvidia, and Microsoft in the $1 Trillion Club",0.916,0.0,0.825,0.175
+TSLA,2023-07-19,2023-07-19T12:18:14+00:00,12 Best NASDAQ Stocks Under $50,1.0,0.017,0.837,0.146
+TSLA,2023-10-18,2023-10-18T23:26:00+00:00,Tesla’s Musk Warns of Cybertruck Challenges,0.66,0.088,0.797,0.115
+TSLA,2023-10-18,2023-10-18T23:10:15+00:00,Chinese EV makers sink tracking disappointing Tesla Q3 earnings,-0.059,0.098,0.808,0.094
+TSLA,2023-10-18,2023-10-18T22:54:00+00:00,Tesla Earnings: 7 Metrics You Should See,0.0,0.0,1.0,0.0
+TSLA,2023-10-18,2023-10-18T22:31:40+00:00,Tesla Earnings Slide 37%; Cybertruck Coming But Elon Musk Issues This Warning,-0.625,0.188,0.812,0.0
+TSLA,2023-10-18,2023-10-18T22:16:45+00:00,"Asian stocks slide as rising yields batter tech, Fed chair awaited",-0.824,0.101,0.816,0.083
+TSLA,2023-10-18,2023-10-18T22:05:46+00:00,Tesla CEO Musk Tempers Expectations on Cybertruck,0.893,0.034,0.76,0.205
+TSLA,2023-10-18,2023-10-18T22:05:00+00:00,"Bond Yields Squeezing Equities; NFLX, LRCX, LVS Beat, TSLA Misses",0.995,0.039,0.844,0.117
+TSLA,2023-10-18,2023-10-18T22:00:06+00:00,Tesla (TSLA) Reports Q3 Earnings: What Key Metrics Have to Say,0.979,0.006,0.912,0.082
+TSLA,2023-10-18,2023-10-18T21:50:04+00:00,Tesla has an 'immense data advantage': Analyst,0.996,0.019,0.867,0.114
+TSLA,2023-10-18,2023-10-18T21:25:08+00:00,Tesla (TSLA) Q3 Earnings and Revenues Miss Estimates,0.995,0.007,0.9,0.093
+TSLA,2023-10-18,2023-10-18T21:23:36+00:00,"Netflix subscribers, Tesla earnings, Costco CEO: Top Stories",0.534,0.052,0.878,0.07
+TSLA,2023-10-18,2023-10-18T21:10:24+00:00,Tesla Q3 Earnings Drop As Price Cuts Squeeze Margins But Fail To Boost Sales,-0.202,0.199,0.699,0.101
+TSLA,2023-10-18,2023-10-18T21:04:49+00:00,Tesla profits fall after price cuts and plant shutdowns,0.382,0.093,0.808,0.099
+TSLA,2023-10-18,2023-10-18T18:56:03+00:00,"Dow futures steady as Netflix, Tesla report",0.637,0.015,0.952,0.033
+TSLA,2023-10-18,2023-10-18T18:54:57+00:00,3 Penny Stocks Poised to Become Multi-Baggers,0.999,0.023,0.854,0.123
+TSLA,2023-10-18,2023-10-18T18:53:47+00:00,"US STOCKS-Wall St declines as yields rise again, investors assess latest earnings",0.977,0.069,0.814,0.117
+TSLA,2023-10-18,2023-10-18T18:08:01+00:00,Why Rivian Stock Was Sliding Today,-0.201,0.058,0.91,0.032
+TSLA,2023-10-18,2023-10-18T18:03:01+00:00,UPDATE 1-Chinese Tesla suppliers to invest nearly $1 bln in northern Mexico - state officials,0.608,0.017,0.952,0.031
+TSLA,2023-10-18,2023-10-18T17:51:47+00:00,Tesla Earnings Due After the Close: What to Know,0.735,0.045,0.782,0.173
+TSLA,2023-10-18,2023-10-18T16:38:29+00:00,Chinese Tesla suppliers to invest nearly $1 billion in northern Mexico - state officials,0.608,0.018,0.95,0.033
+TSLA,2023-10-18,2023-10-18T16:31:00+00:00,Tesla’s Price Cuts to Weigh on Third-Quarter Earnings,0.178,0.1,0.769,0.131
+TSLA,2023-10-18,2023-10-18T16:14:00+00:00,BMW to Adopt Tesla’s Charging Plug. Here Are the Holdouts.,-0.052,0.147,0.714,0.139
+TSLA,2023-10-18,2023-10-18T15:54:42+00:00,Bill Ackman's Ambition Soars: New Investment Vehicle Targets Musk's X,0.998,0.043,0.8,0.157
+TSLA,2023-10-18,2023-10-18T15:25:53+00:00,Elon Musk Asked The Government For $100 Million To Fund His Next 'Badass' Tesla Project — What's The Big Plan?,0.995,0.028,0.853,0.119
+TSLA,2023-10-18,2023-10-18T15:24:06+00:00,"S&amp;P 500 falls as Nvidia drives tech lower ahead of Tesla, Netflix results",0.99,0.048,0.836,0.116
+TSLA,2023-10-18,2023-10-18T14:57:19+00:00,Elon Musk is monitoring your yawns and blinks to prevent you from falling asleep at the wheel with Tesla’s Driver Drowsiness Warning,-0.593,0.06,0.897,0.043
+TSLA,2023-10-18,2023-10-18T14:00:32+00:00,"Tesla Q3 earnings preview: Margins, delivery guidance, Cybertruck status in focus",0.969,0.031,0.897,0.072
+TSLA,2023-10-18,2023-10-18T13:55:21+00:00,Dow Jones Falls After Key Housing Data; Tesla Stock Slides Ahead Of Earnings,0.0,0.0,1.0,0.0
+TSLA,2023-10-18,2023-10-18T13:39:00+00:00,Cathie Wood takes $7 million out of wildly successful stock right before earnings,-0.84,0.102,0.871,0.027
+TSLA,2023-10-18,2023-10-18T13:18:00+00:00,Elon Musk takes a shot at Tesla's most prominent U.S. electric vehicle rival,0.318,0.0,0.974,0.026
+TSLA,2023-10-18,2023-10-18T13:11:58+00:00,Cathie Wood Just Explained Why She Has $899 Million Riding on Elon Musk and Tesla Stock (Hint: It Isn't Just the Robotaxi Opportunity),0.671,0.024,0.883,0.094
+TSLA,2023-10-18,2023-10-18T12:33:21+00:00,"Dow Jones Futures Fall After Key Housing Data; Netflix, Tesla Earnings Next",0.0,0.0,1.0,0.0
+TSLA,2023-10-18,2023-10-18T12:18:00+00:00,Get Plugged in on Tesla and Its Equilateral Triangle Ahead of Earnings,0.361,0.0,0.95,0.05
+TSLA,2023-10-18,2023-10-18T12:06:00+00:00,Tesla Releases Earnings Today. Here’s What to Watch.,0.0,0.0,1.0,0.0
+TSLA,2023-10-18,2023-10-18T12:00:58+00:00,Ferrari Stock Revs Up New Buy Point — Outranks Tesla,0.572,0.0,0.829,0.171
+TSLA,2023-10-18,2023-10-18T11:30:00+00:00,"Why Tesla's Strong Growth Is Likely to Continue, Despite High Interest Rates",0.919,0.0,0.783,0.217
+TSLA,2023-10-18,2023-10-18T11:07:28+00:00,"Dow Jones Futures Fall With Market Rally Rangebound; Five Stocks Near Buy Points, Tesla Earnings Due",0.422,0.127,0.686,0.186
+TSLA,2023-10-18,2023-10-18T10:43:00+00:00,"Stocks lower, Tesla on deck, Netflix earnings in focus, United Airlines slumps, oil surges - 5 Things To Know",-0.886,0.232,0.716,0.051
+TSLA,2023-10-18,2023-10-18T10:33:31+00:00,Tesla Earnings to Reveal Profit Impact Wrought by Price Cuts,0.994,0.077,0.806,0.117
+TSLA,2023-10-18,2023-10-18T10:30:47+00:00,There’s Another Red Flag With QS Stock Few are Talking About,0.992,0.032,0.866,0.102
+TSLA,2023-10-18,2023-10-18T09:58:00+00:00,"Tesla earnings on deck with margin pressure, FSD licensing, Cybertruck in focus",0.852,0.046,0.619,0.334
+TSLA,2023-10-18,2023-10-18T09:37:00+00:00,"Zacks Investment Ideas feature highlights: S&amp;P 500 Index ETF, Nvidia, Semiconductor ETF, Advanced Micro Devices and Tesla",0.966,0.049,0.874,0.077
+TSLA,2023-10-18,2023-10-18T09:35:00+00:00,"These Stocks Are Moving the Most Today: United, Morgan Stanley, ASML, J.B. Hunt, Tesla, Netflix, and More",-0.077,0.116,0.746,0.137
+TSLA,2023-10-18,2023-10-18T09:29:00+00:00,"2 Magnificent Growth Stocks That Turned $1,000 Into $150,000 (or More)",-0.153,0.047,0.915,0.038
+TSLA,2023-10-18,2023-10-18T09:06:00+00:00,"3 Stock-Split Stocks With 110% to 696% Upside, According to Select Wall Street Analysts and Pundits",0.178,0.0,0.946,0.054
+TSLA,2023-10-18,2023-10-18T08:38:54+00:00,These Stocks Are Moving the Most Today,-0.077,0.107,0.767,0.126
+TSLA,2023-10-18,2023-10-18T05:00:42+00:00,"Mid-East tensions, Chinese GDP, Netflix earnings - what's moving markets",-0.986,0.108,0.816,0.076
+TSLA,2023-10-18,2023-10-18T01:14:36+00:00,7 Stocks to Cash In on This Little-Known $22.5 Trillion Opportunity,1.0,0.036,0.829,0.135
+TSLA,2023-10-18,2023-10-18T00:00:00+00:00,Tesla Earnings: 7 Metrics You Should See,0.0,0.0,1.0,0.0
+TSLA,2023-10-18,2023-10-18T00:00:00+00:00,Why Is Tesla Stock Down After Earnings? Is TSLA Stock a Buy Now?,0.202,0.113,0.733,0.154
+TSLA,2024-04-23,2024-04-23T23:40:42+00:00,"Tesla’s Q1 revenue falls 9% amid mass layoffs in California, Texas",0.937,0.035,0.907,0.058
+TSLA,2024-04-23,2024-04-23T22:56:08+00:00,Tesla to speed up rollout of cheaper electric cars,0.911,0.057,0.877,0.066
+TSLA,2024-04-23,2024-04-23T22:37:23+00:00,Tesla notifies thousands in Texas and California of impending layoffs,0.92,0.019,0.93,0.051
+TSLA,2024-04-23,2024-04-23T20:30:00+00:00,Warning! These 3 Blue-Chip Stocks Will Have You Seeing Red,0.522,0.066,0.862,0.072
+TSLA,2024-04-23,2024-04-23T19:33:38+00:00,"Stocks Rally On Weaker PMI Data, Tech Earnings Optimism, Dollar Falls: What's Driving Markets Tuesday?",0.989,0.041,0.86,0.098
+TSLA,2024-04-23,2024-04-23T19:20:20+00:00,Cathie Wood's Ark Empire Bleeds As Investor Outflows Spike: 'The Loyal Shareholders Have Become Frustrated',0.997,0.028,0.836,0.136
+TSLA,2024-04-23,2024-04-23T18:50:00+00:00,General Motors' Financials Rise Despite Headwinds,0.993,0.029,0.864,0.107
+TSLA,2024-04-23,2024-04-23T18:11:02+00:00,Prepare for a Charge: 3 Battery Stocks to Buy Before an EV Rebound,0.966,0.03,0.916,0.053
+TSLA,2024-04-23,2024-04-23T16:37:42+00:00,Uncover Hidden Gems: 3 Silent Stocks Poised for Exponential Growth,0.999,0.024,0.828,0.148
+TSLA,2024-04-23,2024-04-23T13:23:07+00:00,GM CFO on electric vehicle demand: It will be choppy,0.977,0.034,0.866,0.1
+TSLA,2024-04-23,2024-04-23T12:57:10+00:00,Disaster at Tesla? Previewing Today's Earnings,-0.966,0.127,0.821,0.052
+TSLA,2024-04-23,2024-04-23T12:40:44+00:00,UPDATE 1-Tesla aims to cut 400 jobs in Germany via voluntary programme,-0.802,0.098,0.851,0.051
+TSLA,2024-04-23,2024-04-23T12:16:59+00:00,Tesla aims to cut 400 jobs in Germany via voluntary programme,-0.827,0.116,0.884,0.0
+TSLA,2024-04-23,2024-04-23T12:00:44+00:00,Toyota Nearly Strips Away Tesla's Last Shred Of Dignity,0.068,0.085,0.823,0.092
+TSLA,2024-04-23,2024-04-23T11:55:20+00:00,GLOBAL MARKETS-Stocks gear up for Big Tech earnings; yen sits near danger zone,0.975,0.072,0.83,0.099
+TSLA,2024-04-23,2024-04-23T11:45:26+00:00,Elon Musk plots new direction after Tesla’s electric car crisis,0.997,0.057,0.834,0.109
+TSLA,2024-04-23,2024-04-23T11:00:00+00:00,Palantir Stock at a Crossroads: Analyzing the Risks and Rewards for Investors,0.997,0.035,0.847,0.119
+TSLA,2024-04-23,2024-04-23T11:00:00+00:00,Layoffs 2024: 3 Stocks That Ought to Copy Tesla’s Job Cuts,0.985,0.031,0.898,0.071
+TSLA,2024-04-23,2024-04-23T10:51:25+00:00,Tesla Stock in ‘No Man’s Land’ After 43% Rout Ahead of Earnings,-0.976,0.081,0.867,0.052
+TSLA,2024-04-23,2024-04-23T10:50:00+00:00,Buy Rivian Stock Ahead of the Squeeze? Not So Fast,0.948,0.065,0.847,0.087
+TSLA,2024-04-23,2024-04-23T10:34:14+00:00,"General Motors beats quarterly results targets, raises forecast",0.984,0.048,0.853,0.098
+TSLA,2024-04-23,2024-04-23T10:30:00+00:00,3 EV Stocks That Could Be Multibaggers in the Making: April Edition,0.996,0.032,0.854,0.115
+TSLA,2024-04-23,2024-04-23T10:00:00+00:00,3 Blue-Chip Stocks to Buy at a 52-Week Low in April,-0.976,0.098,0.82,0.082
+TSLA,2024-04-23,2024-04-23T09:12:11+00:00,"Trending tickers: Tesla, ABF, Novartis, Taylor Wimpey, JD Sports",0.996,0.039,0.868,0.093
+TSLA,2024-04-23,2024-04-23T08:30:00+00:00,I Was Incredibly Wrong About the Tesla Cybertruck,-0.96,0.125,0.826,0.048
+TSLA,2024-04-23,2024-04-23T08:11:37+00:00,"FTSE 100 LIVE: Europe up, London hits all-time high as traders prices in summer interest rate cut",0.988,0.048,0.867,0.085
+TSLA,2024-04-23,2024-04-23T00:00:00+00:00,3 EV Stocks That Could Be Multibaggers in the Making: April Edition,0.637,0.0,0.729,0.271
+TSLA,2024-04-23,2024-04-23T00:00:00+00:00,TSLA Stock Alert: Tesla Job Cuts Continue with &#039;Voluntary Programme&#039; in Germany,0.422,0.0,0.858,0.142
+TSLA,2024-04-23,2024-04-23T00:00:00+00:00,"TSLA Stock Earnings: Tesla Misses EPS, Misses Revenue for Q1 2024",-0.296,0.165,0.752,0.083
+TSLA,2024-04-23,2024-04-23T00:00:00+00:00,"
+Travis Hoium  |  Apr 23, 2024
+",-0.142,0.147,0.853,0.0
+TSLA,2024-04-23,2024-04-23T00:00:00+00:00,"
+Parkev Tatevosian, CFA  |  Apr 23, 2024
+",0.0,0.0,1.0,0.0
+TSLA,2024-04-23,2024-04-23T00:00:00+00:00,Why Are Stocks Up Today?,0.0,0.0,1.0,0.0
+TSLA,2024-04-23,2024-04-23T00:00:00+00:00,Profit From the Panic: 3 Stocks to Buy as Fear Hits Wall Street,0.34,0.0,0.87,0.13
