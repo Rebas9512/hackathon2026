@@ -1,0 +1,15 @@
+ticker,date,label,polarity,neg,pos,title,source,article_count
+AAPL,2023-05-28,most_positive,0.999,0.075,0.143,7 Overvalued Value Stocks to Sell Before June 2023,,5
+AAPL,2021-12-19,most_negative,-0.985,0.132,0.02,Dozens released after protest at India plant of Apple supplier Foxconn,,8
+MSFT,2024-09-08,most_positive,1.0,0.02,0.143,Microsoft Corporation (MSFT): Short Seller Sentiment Is Bullish,,6
+MSFT,2021-07-03,most_negative,-0.997,0.13,0.062,Massive Ransomware Attack May Impact Thousands of Victims,,5
+GOOGL,2024-07-09,most_positive,0.999,0.012,0.137,Amazon launches its fourth-generation Graviton4 chip as competition intensifies,,14
+GOOGL,2023-08-19,most_negative,-0.987,0.112,0.029,UPDATE 2-California regulator probes crashes involving GM's Cruise robotaxis,,11
+AMZN,2024-03-01,most_positive,1.0,0.014,0.185,5 Tech Giants to Buy for Long-Term Gains as Nasdaq Thrives,,10
+AMZN,2022-02-27,most_negative,-0.976,0.091,0.04,UPDATE 2-India's Future Retail suspends supermarket operations as Reliance plans takeover,,7
+NVDA,2021-06-15,most_positive,1.0,0.015,0.131,"The Zacks Analyst Blog Highlights: NVIDIA, Target, Lam Research, Alphabet and Intuitive Surgical",,7
+NVDA,2022-12-26,most_negative,-0.572,0.109,0.079,These 2 Stocks Were Among the Biggest Losers of 2022 -- Could They Be Among the Biggest Winners in 2023?,,5
+META,2024-01-10,most_positive,1.0,0.041,0.171,The Top 7 AI Stocks (Not Named Nvidia) to Start 2024,,5
+META,2023-01-08,most_negative,-0.989,0.176,0.076,Seattle public schools blame tech giants for social media harm in lawsuit,,5
+TSLA,2025-01-19,most_positive,1.0,0.027,0.151,"Here's How Much You Could Earn in Dividends From a $350,000 Investment in the ""Magnificent Seven"" Stocks",,7
+TSLA,2023-02-19,most_negative,-0.989,0.157,0.045,Tesla driver killed after plowing into firetruck on freeway,,10
