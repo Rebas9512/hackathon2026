@@ -26,6 +26,8 @@ Our journey starts with the simplest possible model: if a company beats earnings
 
 **Rule**: `EPS_actual > EPS_consensus → Up, otherwise → Down`
 
+![M0 Baseline Benchmark](outputs/m0_baseline_benchmark.png)
+
 **M0 Standalone Results** (51 test events, walk-forward from event 41):
 
 | Metric | M0 (Beat/Miss Rule) | Random Baseline |
@@ -437,6 +439,7 @@ hackathon2026/
 │   ├── build_db.py
 │   └── clean_data.py
 ├── notebooks/
+│   ├── 00_m0_baseline.ipynb             # M0 standalone evaluation
 │   ├── 01_baseline_benchmark.ipynb       # M0 vs M1 baselines
 │   ├── 02_m2_sentiment.ipynb            # M2 sentiment model + comparison
 │   └── 03_m2_deep_dive.ipynb            # M2 victory/failure analysis + news
