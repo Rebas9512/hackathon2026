@@ -103,7 +103,7 @@ To understand when and why sentiment adds value, we dissected every event where 
 
 ### M2 Per-Event Trading PnL
 
-Among the 14 events where M2 and M0 disagreed, M2 made a profit on 6 and took a loss on 8 — but the profitable trades were larger in magnitude.
+Among the 14 events where M2 and M0 disagreed, M2 made a profit on 6 and took a loss on 8 — but the profitable trades were far larger in magnitude, giving M2 a net **+3.6% edge** over M0. The key pattern: M2's edge concentrates on events with extreme sentiment swings — the TSLA 24-04 rally (+26.7%) amid rock-bottom sentiment and the GOOGL 25-02 crash (-10.2%) amid peak AI hype were both high-conviction calls that M0's simple beat/miss rule could never capture. When market sentiment diverges sharply from earnings fundamentals, M2's sentiment features detect the mispricing.
 
 ![M2 PnL Attribution](outputs/m2_pnl_attribution.png)
 
