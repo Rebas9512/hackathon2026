@@ -242,25 +242,206 @@ This is exactly the problem M3's cross-company spillover features are designed t
 
 ---
 
-## Key Insight: Why M3 Matters
+## Chapter 5 — M3: Adding the Cross-Company Spillover Network
+
+### The Idea
 
 The "buy the rumor, sell the news" pattern that M2 discovered is strongest when **system-wide AI hype** is elevated — not just company-specific sentiment. M2 fails when it can't distinguish:
 
 - **High sentiment in a generally hyped market** → likely priced in → sell (MSFT Jan 2025, GOOGL Feb 2025)
 - **High sentiment with peers at neutral/low** → company-specific good news → may still have upside (NVDA Feb 2024)
 
-M3's cross-company spillover network features (from the Diebold-Yilmaz framework) are designed to capture exactly this distinction by measuring how tightly coupled the Mag7 sentiment system is at any given time.
+M3 adds **4 cross-company features** from a Diebold-Yilmaz dual-layer spillover network (one layer on returns, one on sentiment). For each earnings event, we fit VAR models on the [ED-150, ED-8] window of all 7 Mag7 companies, compute Generalized FEVD (Pesaran-Shin 1998), and extract a 7×7 directional connectedness matrix capturing "who influences whom."
+
+New features:
+- `spillover_weighted_sent` — other companies' sentiment, weighted by how strongly they spill into the target
+- `net_transmitter` — out-degree minus in-degree: is this company leading or following the pack?
+- `system_connectedness` — how tightly coupled the entire Mag7 system is right now
+- `spillover_neg_asym` — bearish sentiment pressure from influential peers (relative to historical baseline)
+
+### A Note on Statistical Scope: Why the Numbers Changed
+
+**The test set shrank from 48 events (M2 evaluation) to 29 events (M3 evaluation).** Here is why.
+
+M3's spillover network requires all 7 Mag7 companies to have continuous daily sentiment data in the [ED-150, ED-8] window. EODHD's sentiment coverage for META only began in November 2021, which means the network cannot be computed for any event before roughly Q4 2022. This eliminates 21 of the 91 earnings events. Combined with 2–3 events already dropped for missing M2 features, the usable dataset shrinks to **69 events** — and with MIN_TRAIN = 40, the walk-forward test window contains only **29 events**.
+
+To ensure a fair apples-to-apples comparison, **all four models (M0, M1, M2, M3) are re-evaluated on the same 29-event test set**. This means the M0/M1/M2 numbers below differ from earlier chapters, which used larger test sets. The relative ranking is what matters — all models face the same events.
+
+This also explains two changes in M0 and M1 behavior:
+
+1. **M0 went from +24.3% to −20.9%**: The 29-event test set spans late 2023 to early 2025, a period dominated by the AI sentiment unwind (DeepSeek shock, tariff wars). In this window, Mag7 companies beat EPS 90% of the time but the stock dropped anyway in over half the events. The naive "beat = up" rule gets destroyed in a regime where good news is already priced in.
+
+2. **M1 no longer equals Buy & Hold (+18.6% vs +6.5%)**: In the earlier 48-event set, M1's logistic regression on surprise % found no useful decision boundary and predicted "up" for every event, collapsing to Buy & Hold. In the 29-event set, the training data (first 40 events) now includes enough "high-surprise but drop" observations that M1 finally learns a non-trivial threshold — it starts predicting "down" for a few events, which breaks the Buy & Hold equivalence.
+
+### M0 vs M1 vs M2 vs M3 Comparison
+
+![M0 vs M1 vs M2 vs M3 Comparison](outputs/m0_m1_m2_m3_comparison.png)
+
+| Metric | M0 (Beat/Miss) | M1 (Surprise %) | M2 (+ Sentiment) | M3 (+ Spillover) | Random |
+|--------|----------------|------------------|-------------------|-------------------|--------|
+| Accuracy | 0.483 | 0.517 | 0.448 | **0.586** | 0.500 |
+| F1 | 0.615 | 0.611 | 0.500 | 0.571 | — |
+| AUC-ROC | 0.524 | **0.712** | 0.524 | 0.606 | 0.500 |
+| Gross Return | −20.9% | +18.6% | −35.1% | **+26.4%** | — |
+
+> Note: All four models evaluated on the same 29-event test set (events with complete M3 spillover features) for fair comparison. See note above for why this differs from earlier chapters.
+
+M3 achieves the **highest accuracy (0.586)**, the **best trading return (+26.4%)**, and a meaningful AUC (0.606) — all while M0 and M2 are losing money in this regime. The spillover network features succeed precisely where M2 failed: distinguishing system-wide hype from company-specific signal.
+
+### M3's Strongest Feature: `spillover_weighted_sent`
+
+M3's coefficients reveal that the cross-company spillover sentiment (`spillover_weighted_sent`, coefficient −0.826) is the **single most important feature** — even stronger than `surprise_pct` (+0.799). Its negative sign means: when the companies that influence you are all highly positive, that's a sell signal. This is the "buy the rumor, sell the news" dynamic elevated from company-level to **network-level**.
 
 ---
 
-## Three-Model Progressive Comparison
+## Chapter 6 — Deep Dive: M3's Victories and the Network Edge
+
+Among the 29 test events, M3 and M2 disagreed on **10 predictions**. M3 was correct on **7 of 10** (M2: 3 of 10). The PnL edge on these disagreements alone was **+65.6%** — M3 made +32.8% where M2 lost −32.8%.
+
+The pattern: M3's edge concentrates on events where the **system connectedness** is extreme — either very high (system-wide hype, contrarian short) or very low (idiosyncratic signal, contrarian long).
+
+### The 4 "System Hype" Short Victories
+
+M3 correctly predicted **DOWN** in 4 events where the Mag7 system was tightly coupled and sentiment was elevated. M2 predicted UP in all 4 (following the beat signal) and lost.
+
+---
+
+#### MSFT — 2025-01-29 (DeepSeek Week)
+
+> EPS Surprise: **+4.1%** (BEAT) | 5-Day Return: **−6.6%** (DROPPED)
+> System Connectedness: **0.535** (top 5%) | Net Transmitter: **+0.171** (strongest sender)
+> Spillover Weighted Sentiment: 0.718 | M2: Up (wrong) | M3: **Down (correct)**
+
+**What M3 saw that M2 didn't**: System connectedness was at 0.535, the second-highest in the dataset. MSFT was the strongest net transmitter (+0.171), meaning its shocks were radiating outward to all other Mag7 companies. This wasn't just MSFT-specific optimism — the entire system was running hot. M3 recognized this as peak system-wide hype and shorted.
+
+**What happened**: The DeepSeek AI breakthrough landed in the same week, threatening the AI infrastructure spending thesis that justified Mag7 valuations. MSFT beat earnings, but the market was already pricing in a paradigm shift. Sentiment at 0.748 was the highest of any event in the dataset — and the network said *everyone* was this optimistic, not just MSFT.
+
+Key headlines:
+| Polarity | Headline |
+|----------|----------|
+| −0.869 | Alibaba Surges as AI Battle Heats Up; Nvidia Rebounds After Historic Loss |
+| −0.728 | China's DeepSeek Just Shook the AI World—And Elon Musk Isn't Buying It |
+| −0.542 | DeepSeek AI Fears Haunt Meta, Microsoft Earnings |
+| +1.000 | Is Microsoft (MSFT) the Best American Stock to Buy and Hold in 2025? |
+
+---
+
+#### NVDA — 2024-11-20 (Peak System Connectedness)
+
+> EPS Surprise: **+8.5%** (BEAT) | 5-Day Return: **−7.2%** (DROPPED)
+> System Connectedness: **0.563** (highest in entire dataset) | Net Transmitter: **+0.144**
+> Spillover Weighted Sentiment: 0.243 (lowest!) | M2: Up (wrong) | M3: **Down (correct)**
+
+**What M3 saw that M2 didn't**: A paradox — system connectedness was at its all-time high (0.563), yet `spillover_weighted_sent` was at its all-time low (0.243). This meant the Mag7 system was maximally coupled, but the companies influencing NVDA were in a bearish mood. `spillover_neg_asym` hit 0.197, the highest in the dataset — heavy bearish pressure flowing in from peers. M3 read this as: the system is tightly wound and the mood is turning, short NVDA despite the beat.
+
+**What happened**: NVDA beat earnings by 8.5%, but the market had already priced in perfection. Overheating concerns (literal GPU overheating reports) and the sense that AI infrastructure spending was peaking combined with a tightly-coupled system where any negative signal propagated instantly.
+
+Key headlines:
+| Polarity | Headline |
+|----------|----------|
+| −0.402 | Should Nvidia Stock Investors Be Worried About Recent Overheating Reports? |
+| −0.332 | Nvidia Back In Buy Zone But Analysts See Huge Risk To S&P 500 As Earnings Loom |
+| −0.250 | Should You Buy Nvidia Stock Before Nov. 20? Wall Street Has a Compelling Answer. |
+| +0.997 | nVent Collaborates with NVIDIA on AI-Ready Liquid Cooling Solutions |
+
+---
+
+#### AMZN — 2025-02-06 (Trade War Shock)
+
+> EPS Surprise: **+25.4%** (BEAT, massive) | 5-Day Return: **−3.5%** (DROPPED)
+> System Connectedness: **0.521** (elevated) | Net Transmitter: −0.008 (neutral)
+> Spillover Weighted Sentiment: 0.641 | M2: Up (wrong) | M3: **Down (correct)**
+
+**What M3 saw**: System connectedness at 0.521 — the Mag7 was tightly coupled during the tariff escalation. Even a 25% earnings beat couldn't overcome the system-wide risk-off flow. After MSFT and GOOGL both disappointed on cloud metrics, the network was transmitting bearish cloud-growth fears across all tech names.
+
+Key headlines:
+| Polarity | Headline |
+|----------|----------|
+| −0.947 | Say Goodbye to Cheap Shein & Temu Hauls—Trump's Tariffs Just Wrecked the Game |
+| −0.899 | Trump Targets Loophole Temu, Shein Used to Take On Amazon |
+| +0.999 | The most popular stocks and funds for investors in January |
+
+---
+
+#### MSFT — 2024-04-25
+
+> EPS Surprise: **+3.4%** (BEAT) | 5-Day Return: **−0.3%** (DROPPED, barely)
+> System Connectedness: 0.333 | Net Transmitter: **+0.139** (strong sender)
+> Spillover Weighted Sentiment: 0.663 | M2: Up (wrong) | M3: **Down (correct)**
+
+**What M3 saw**: While system connectedness was moderate, MSFT was the strongest net transmitter in the network (+0.139). Combined with high spillover sentiment (0.663), M3 recognized this as a "priced-in beat" scenario. The EU antitrust probe against the OpenAI partnership added downward pressure.
+
+Key headlines:
+| Polarity | Headline |
+|----------|----------|
+| −0.772 | Exclusive—Microsoft's OpenAI partnership could face EU antitrust probe |
+| −0.946 | Should You Buy Microsoft Stock Before Earnings |
+| +1.000 | 13 Best Ethical Companies to Invest in 2024 |
+
+---
+
+### The 2 Contrarian Long Victories
+
+M3 also correctly predicted **UP** in 2 events where M2 predicted DOWN — both times by reading low system connectedness as a sign that the company had idiosyncratic upside not captured by the group mood.
+
+---
+
+#### TSLA — 2024-04-23 (The $+26.7% Rally, Revisited)
+
+> EPS Surprise: **−8.1%** (MISS) | 5-Day Return: **+26.7%** (MASSIVE RALLY)
+> System Connectedness: **0.333** (low) | Net Transmitter: −0.069 (follower)
+> Spillover Weighted Sentiment: 0.654 | M2: Down (wrong) | M3: **Up (correct)**
+
+**What M3 saw that M2 didn't**: System connectedness was at 0.333, near its lowest. This meant the Mag7 system was *decoupled* — individual stories mattered more than group dynamics. TSLA's pre-earnings sentiment was at 0.323, the most negative in the entire dataset, but the companies influencing TSLA had moderate sentiment (0.654). The network said: this is a TSLA-specific story, not a system-wide panic. Room for a contrarian rebound.
+
+This is the same event that was M2's biggest single win in Chapter 4 — but M2 got it right for the wrong reason (negative sentiment → contrarian long happened to work). M3 gets it right for the *right* reason: the low system connectedness confirms this is idiosyncratic, making the contrarian call higher-conviction.
+
+---
+
+#### NVDA — 2024-05-22 (AI Supercycle, Part II)
+
+> EPS Surprise: **+9.7%** (BEAT) | 5-Day Return: **+16.4%** (RALLIED)
+> System Connectedness: **0.319** (lowest in dataset) | Net Transmitter: −0.056
+> Spillover Weighted Sentiment: 0.684 | M2: Down (wrong) | M3: **Up (correct)**
+
+**What M3 saw**: System connectedness was at its all-time low (0.319). The Mag7 was maximally decoupled — each company was trading on its own story. NVDA's high sentiment wasn't system-wide froth; it was company-specific AI demand reality. M3 recognized that in a decoupled regime, high sentiment for NVDA actually reflected genuine fundamentals, not priced-in hype.
+
+This is the exact correction M3 was designed to make — the one M2 kept getting wrong (see M2's Biggest Failure: NVDA 2024-02-21 in Chapter 4).
+
+Key headlines:
+| Polarity | Headline |
+|----------|----------|
+| −0.360 | Forget Nvidia, This Is the Only AI Stock You Need |
+| +1.000 | Your Own Magnificent Seven: The Only 7 Stocks You Need for a Perfect Portfolio |
+
+---
+
+### M3's Key Insight: System Connectedness as a Regime Switch
+
+The pattern across all victories is clear:
+
+| Regime | System Connectedness | What It Means | M3's Action |
+|--------|---------------------|---------------|-------------|
+| **High** (>0.50) | Mag7 moves as one block | Sentiment is system-wide hype → sell the beat | Short even on EPS beat |
+| **Low** (<0.35) | Mag7 is decoupled | Sentiment is company-specific → trust the signal | Long if fundamentals support it |
+| **Mid** (0.35–0.50) | Mixed | M3 relies more on other features | Case-by-case |
+
+This is why `system_connectedness` has a **negative coefficient (−0.670)** — higher connectedness → more likely to drop after earnings. When the system is tightly coupled, good news is already priced in everywhere, and any crack (DeepSeek, tariffs, overheating fears) propagates instantly.
+
+![System Connectedness Over Time](outputs/system_connectedness_timeline.png)
+
+The timeline shows system connectedness bottoming in mid-2024 (the decoupled regime where NVDA's idiosyncratic AI rally played out) and surging to peaks in Q4 2024–Q1 2025 (the regime where beat-but-drop dominated).
+
+---
+
+## Four-Model Progressive Comparison
 
 | Model | Features | Purpose |
 |-------|----------|---------|
 | **M0: Naive Rule** | Beat → Up, Miss → Down | "Does the surprise direction matter?" |
 | **M1: Baseline** | Logistic regression on surprise % | "Does the surprise magnitude help?" |
 | **M2: + Sentiment** | + 4 pre-earnings sentiment features | "Does sentiment add predictive power?" |
-| **M3: + Spillover** | + dual-layer DY network cross-company signals | "Does cross-company context help?" |
+| **M3: + Spillover** | + 4 dual-layer DY network cross-company signals | "Does cross-company context help?" |
 
 ---
 
@@ -434,20 +615,27 @@ hackathon2026/
 │   ├── sentiment/
 │   │   ├── daily_sentiment.csv           # Daily aggregated sentiment, 2021-06~2025-03
 │   │   └── extreme_events.csv           # Notable sentiment events for dashboard
-│   └── news/
-│       ├── window_articles.csv           # 13,588 articles in [ED-7,ED-1] windows
-│       └── ed_day_articles.csv           # 563 ED-day articles for post-hoc analysis
+│   ├── news/
+│   │   ├── window_articles.csv           # 13,588 articles in [ED-7,ED-1] windows
+│   │   └── ed_day_articles.csv           # 563 ED-day articles for post-hoc analysis
+│   └── spillover/
+│       ├── m3_features.csv              # 70 events × 4 M3 features
+│       └── connectedness_matrices.pkl   # All 7×7 DY matrices for dashboard
 ├── scripts/
 │   ├── 01_fetch_sentiment.py
 │   ├── 02_fetch_prices.py
 │   ├── 03_fetch_window_news.py
+│   ├── 04_build_spillover_network.py    # DY dual-layer spillover computation
 │   ├── build_db.py
 │   └── clean_data.py
 ├── notebooks/
 │   ├── 00_m0_baseline.ipynb             # M0 standalone evaluation
 │   ├── 01_baseline_benchmark.ipynb       # M0 vs M1 baselines
 │   ├── 02_m2_sentiment.ipynb            # M2 sentiment model + comparison
-│   └── 03_m2_deep_dive.ipynb            # M2 victory/failure analysis + news
+│   ├── 03_m2_deep_dive.ipynb            # M2 victory/failure analysis + news
+│   └── 04_m3_spillover.ipynb            # M3 spillover model + 4-model comparison
+├── docs/
+│   └── dy_framework_explained.md        # DY framework plain-English explainer
 ├── outputs/                              # Charts and figures
 └── app/                                 # Streamlit dashboard (pending)
 ```
@@ -461,7 +649,8 @@ hackathon2026/
 - [x] M1 baseline: logistic regression on surprise % (AUC 0.634, but predicts all-up)
 - [x] M2 evaluated: + sentiment features (AUC 0.447, return +30.2%)
 - [x] M2 deep dive: identified "buy the rumor, sell the news" pattern in 5 events + TSLA contrarian rally
-- [ ] DY spillover network computation (or correlation fallback)
-- [ ] M3 evaluation (+ spillover network features)
+- [x] DY dual-layer spillover network computation (70/91 events, VAR + Generalized FEVD)
+- [x] M3 evaluated: + spillover features (accuracy 0.586, return +26.4%, best on 29-event test set)
+- [x] M3 deep dive: system connectedness as regime switch, +65.6% edge over M2 on disagreements
 - [ ] Dashboard / visualization
 - [ ] Presentation
