@@ -556,6 +556,18 @@ This is interesting: LogReg correctly read the peak system connectedness as a re
 
 XGBoost's edge is not random — it systematically profits from the low-connectedness long signal. Its failures come from the same source: it trusts the regime *too much* and under-weights the fundamental signal (surprise %) when they conflict.
 
+#### Disclaimer: Overfitting Risk and Intended Scope
+
+The +205.9% return is computed on **29 test events** — a sample size where a single large-magnitude event (e.g., TSLA Oct-24 at +20.5%) can swing the cumulative return by 20+ percentage points. With 9 features and depth-2 trees, XGBoost has enough capacity to memorize regime-specific patterns that may not generalize to new market conditions.
+
+**This aggressive strategy is presented as a demonstration, not a recommendation.** Its potential applicability is limited to:
+
+- **Short time horizons** where the market regime (connectedness structure, sector correlations) remains similar to the training period
+- **Tightly related company groups** (like Mag7) where the spillover network structure is stable enough for the learned thresholds to hold
+- **Regime-aware deployment** — the strategy should be re-evaluated whenever system connectedness shifts into an unfamiliar range
+
+The interpretable LogReg model (M3) remains the primary contribution of this project: it reveals *why* cross-company sentiment spillover predicts post-earnings returns. XGBoost shows that this signal contains exploitable non-linear structure, but extracting that value reliably requires larger sample sizes or stronger regularization than our 91-event dataset can support.
+
 ---
 
 ## Five-Model Progressive Comparison
