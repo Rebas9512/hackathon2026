@@ -434,7 +434,41 @@ The timeline shows system connectedness bottoming in mid-2024 (the decoupled reg
 
 ---
 
-## Four-Model Progressive Comparison
+## Chapter 7 — From Understanding to Trading: LogReg vs XGBoost
+
+Throughout M0–M3, we used **logistic regression** for a reason: every coefficient tells a readable story. `spillover_weighted_sent = −0.826` means "when your influential peers are all bullish, that's a sell signal." This interpretability is the scientific contribution.
+
+But the key insight from Chapter 6 — that `system_connectedness` acts as a regime switch — is inherently **non-linear**. Logistic regression can only model "higher connectedness → more likely to drop" as a smooth gradient. A tree-based model can learn the actual thresholds: *below 0.35, trust the beat; above 0.50, fade it.*
+
+So we ask: **using the exact same 9 features**, what happens if we swap logistic regression for XGBoost?
+
+![LogReg vs XGBoost](outputs/m3_logreg_vs_xgboost.png)
+
+| Model | Accuracy | AUC | F1 | Gross Return |
+|-------|----------|-----|-----|-------------|
+| M3 LogReg (interpretable) | 0.586 | 0.606 | 0.571 | **+26.4%** |
+| M3 XGBoost (aggressive) | **0.655** | **0.692** | **0.706** | **+205.9%** |
+
+XGBoost improves on every metric. The +205.9% return is driven by higher-conviction short calls in the high-connectedness regime (Q4 2024–Q1 2025) — precisely where the regime switch signal is strongest.
+
+On the 12 events where the two models disagreed, XGBoost was correct 7 times vs LogReg's 5, with a PnL edge of +87.6%. The pattern: XGBoost is **more willing to go long in the low-connectedness regime** (correctly buying NVDA 2024-02, AMZN 2024-02, TSLA 2024-10 rallies) while also **sharper at flipping short** when connectedness rises above its learned threshold (MSFT 2024-07, MSFT 2024-10).
+
+### Interpretation: Two Models, Two Roles
+
+| Approach | Model | Role | Strength |
+|----------|-------|------|----------|
+| **Interpretable** | Logistic Regression | Understand *why* — coefficients tell the story | Transparent, publishable, robust to overfitting |
+| **Aggressive** | XGBoost (depth=2) | Maximize *profit* — learn regime thresholds | Captures non-linear interactions between system connectedness and sentiment |
+
+The aggressive model's edge comes from **interaction effects** that logistic regression cannot represent:
+- "High `system_connectedness` AND high `spillover_weighted_sent` → strong sell" (multiplicative)
+- "Low `system_connectedness` AND positive `surprise_pct` → strong buy" (conditional)
+
+**Caveat**: With only 29 test events, the +205.9% figure carries wide confidence intervals. It should be read as directional evidence that the spillover features contain exploitable non-linear structure, not as a production backtest. In a real deployment, the interpretable model defines the strategy thesis; the aggressive model sizes the bets.
+
+---
+
+## Five-Model Progressive Comparison
 
 | Model | Features | Purpose |
 |-------|----------|---------|
@@ -442,6 +476,7 @@ The timeline shows system connectedness bottoming in mid-2024 (the decoupled reg
 | **M1: Baseline** | Logistic regression on surprise % | "Does the surprise magnitude help?" |
 | **M2: + Sentiment** | + 4 pre-earnings sentiment features | "Does sentiment add predictive power?" |
 | **M3: + Spillover** | + 4 dual-layer DY network cross-company signals | "Does cross-company context help?" |
+| **M3-XGB: Aggressive** | Same 9 features, XGBoost (depth=2) | "Can non-linear modeling exploit the regime switch?" |
 
 ---
 
@@ -652,5 +687,6 @@ hackathon2026/
 - [x] DY dual-layer spillover network computation (70/91 events, VAR + Generalized FEVD)
 - [x] M3 evaluated: + spillover features (accuracy 0.586, return +26.4%, best on 29-event test set)
 - [x] M3 deep dive: system connectedness as regime switch, +65.6% edge over M2 on disagreements
+- [x] XGBoost aggressive strategy: same features, +205.9% return (non-linear regime exploitation)
 - [ ] Dashboard / visualization
 - [ ] Presentation
