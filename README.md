@@ -101,17 +101,13 @@ To understand when and why sentiment adds value, we dissected every event where 
 
 ![M2 Sentiment vs Surprise](outputs/m2_sentiment_vs_surprise.png)
 
-### M2 Won 6 Events, Lost 8 — But Won Bigger
+### M2 Per-Event Trading PnL
 
-| | Events | Total PnL Impact |
-|--|--------|-----------------|
-| M2 victories over M0 | 6 | — |
-| M2 failures vs M0 | 8 | -108.8% cumulative |
-| **Net M2 edge over M0** | — | **+3.6%** |
-
-M2 wins fewer events but captures larger moves — its victories came on high-magnitude drops and one massive rally.
+Among the 14 events where M2 and M0 disagreed, M2 made a profit on 6 and took a loss on 8 — but the profitable trades were larger in magnitude.
 
 ![M2 PnL Attribution](outputs/m2_pnl_attribution.png)
+
+The chart shows M2's actual trading PnL for each event (long if predicted Up, short if predicted Down). Green = M2 profited, red = M2 lost money on that position.
 
 ### The 5 "Beat But Drop" Victories
 
