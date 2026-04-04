@@ -255,28 +255,68 @@ hackathon2026/
 │   ├── 02_fetch_prices.py               # yfinance prices + EPS
 │   ├── 03_fetch_window_news.py          # EODHD window news articles
 │   ├── build_db.py                      # Build SQLite from CSVs
-│   ├── 04_features.py                   # Feature engineering (pending)
-│   ├── 05_spillover_network.py          # DY framework / correlation fallback (pending)
-│   ├── 06_model.py                      # Model training & evaluation (pending)
-│   └── 07_dashboard.py                  # Streamlit dashboard (pending)
-├── notebooks/                            # Analysis notebooks (pending)
+│   └── clean_data.py                    # Data cleaning + DB rebuild
+├── notebooks/
+│   ├── 01_baseline_benchmark.ipynb       # M0 vs M1 baselines
+│   └── 02_m2_sentiment.ipynb            # M2 sentiment model + M0/M1/M2 comparison
+├── outputs/                              # Charts and figures
 └── app/                                 # Streamlit dashboard (pending)
 ```
 
 > **Note**: Run `build_db.py` after any CSV changes to rebuild the SQLite database.
 
+## Results So Far
+
+### M0 vs M1 Baselines (Notebook 01)
+
+![M0 vs M1 Baseline Benchmark](outputs/m0_m1_baseline_benchmark.png)
+
+| Metric | M0 (Beat/Miss Rule) | M1 (LogReg on Surprise %) | Random |
+|--------|---------------------|---------------------------|--------|
+| Accuracy | **0.549** | 0.490 | 0.500 |
+| F1 | **0.676** | 0.658 | — |
+| AUC-ROC | 0.557 | **0.634** | 0.500 |
+| Gross Return | **+66.6%** | +43.1% | — |
+
+**Key findings:**
+- M0's naive rule (beat → up, miss → down) beats M1 on accuracy because it actually predicts both classes, while M1's logistic regression predicts all events as "up" due to weak signal
+- M1 has better AUC (0.634), meaning its probability ranking captures some information — larger surprises do correlate with positive returns — but the single feature can't overcome the decision boundary
+- M1 strategy = Buy & Hold (always predicts up), so their return curves overlap exactly at +43.1%
+
+### M0 vs M1 vs M2 Comparison (Notebook 02)
+
+![M0 vs M1 vs M2 Comparison](outputs/m0_m1_m2_comparison.png)
+
+| Metric | M0 (Beat/Miss) | M1 (Surprise %) | M2 (+ Sentiment) | Random |
+|--------|----------------|------------------|-------------------|--------|
+| Accuracy | 0.542 | 0.419 | 0.500 | 0.500 |
+| F1 | 0.667 | 0.648 | 0.600 | — |
+| AUC-ROC | 0.558 | 0.617 | 0.447 | 0.500 |
+| Gross Return | +24.3% | +6.8% | **+30.2%** | — |
+
+> Note: M0/M1 numbers differ from Notebook 01 because all three models are evaluated on the same reduced test set (excluding events with missing sentiment data) for fair comparison.
+
+**Key findings:**
+- M2's AUC (0.447) is **worse than random** — adding 4 sentiment features to 48 test events causes overfitting to noise
+- Despite poor AUC, M2 achieves the **best trading return (+30.2%)** by correctly calling a few high-magnitude moves — but this is not robust
+- `surprise_pct` remains the only feature with a positive coefficient; all 4 sentiment features have **negative coefficients**, suggesting a "buy the rumor, sell the news" dynamic — stocks with unusually positive pre-earnings sentiment tend to underperform after earnings
+- The negative sentiment signal is an interesting finding for M3: cross-company spillover may help distinguish company-specific vs system-wide hype
+
+---
+
 ## Current Status
 
 - [x] Project scope and pipeline design finalized
-- [x] Three-model progressive comparison designed (M1 → M2 → M3)
+- [x] Three-model progressive comparison designed (M0 → M1 → M2 → M3)
 - [x] Earnings data collected (91 events, 100% EPS surprise coverage)
 - [x] Stock price data collected (M7 + SPY, 962 trading days, zero missing)
 - [x] Daily sentiment collected (7 tickers × ~1,300 days continuous series)
-- [x] Window news articles collected (13,588 articles with per-article polarity)
-- [x] Dual-layer DY network approach designed (return + sentiment connectedness)
-- [x] Sentiment methodology documented (EODHD VADER-consistent scoring)
-- [ ] Feature engineering (M1/M2/M3 features)
+- [x] Window news articles collected (13,569 articles with per-article polarity)
+- [x] Data cleaned and loaded into SQLite database
+- [x] M0 baseline evaluated (naive beat/miss rule)
+- [x] M1 baseline evaluated (logistic regression on surprise_pct)
+- [x] M2 evaluated (+ sentiment features: sent_mean, sent_trend, sent_delta, news_volume)
 - [ ] DY spillover network computation (or correlation fallback)
-- [ ] Model training and walk-forward evaluation
+- [ ] M3 evaluation (+ spillover network features)
 - [ ] Dashboard / visualization
 - [ ] Presentation
