@@ -32,8 +32,8 @@ Our journey starts with the simplest possible model: if a company beats earnings
 
 All "Gross Return" figures in this project use a **long/short strategy** — every earnings event takes a position:
 
-- Model predicts **Up** → **做多 (long)**: buy the stock on ED, hold 5 trading days. Return = `ret_5d`.
-- Model predicts **Down** → **做空 (short)**: short-sell the stock on ED, cover after 5 trading days. Return = `-ret_5d` (stock drops → profit).
+- Model predicts **Up** → **Long**: buy the stock on ED, hold 5 trading days. Return = `ret_5d`.
+- Model predicts **Down** → **Short**: short-sell the stock on ED, cover after 5 trading days. Return = `-ret_5d` (stock drops → profit).
 
 There is no "sit out" option — the model is always fully invested in one direction. This means return numbers reward *correct predictions in both directions*, not just bullish calls. For comparison, "Buy & Hold" is a pure long baseline that ignores the model entirely.
 
