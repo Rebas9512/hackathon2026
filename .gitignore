@@ -6,3 +6,4 @@ __pycache__/
 data/hackathon.db
 notebooks/*_executed.ipynb
 node_modules/
+~$*

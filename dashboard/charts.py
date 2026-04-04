@@ -64,6 +64,7 @@ def build_price_chart(
     events_df: pd.DataFrame,
     ticker: str,
     selected_models: list[str],
+    show_earnings_dates: bool = False,
 ) -> go.Figure:
     """Build the main interactive stock price chart with earnings + model overlays."""
 
@@ -88,6 +89,53 @@ def build_price_chart(
                     "<extra></extra>"
                 ),
             ))
+
+        # Earnings date markers
+        if show_earnings_dates:
+            ec_events = events_df.drop_duplicates(subset=["ticker", "earnings_date"])
+            for _, ev in ec_events.iterrows():
+                ed = ev["earnings_date"]
+                fig.add_vline(
+                    x=ed, line=dict(color=COLORS["yellow"], width=0.8, dash="dot"),
+                    opacity=0.2,
+                )
+            # Dot markers per company at their earnings dates
+            for tk, color in MAG7_COLORS.items():
+                tkp = prices[prices["ticker"] == tk].sort_values("date").copy()
+                if tkp.empty:
+                    continue
+                base = tkp.iloc[0]["close"]
+                tk_ec = events_df[events_df["ticker"] == tk]
+                ec_x, ec_y, ec_custom = [], [], []
+                for _, ev in tk_ec.iterrows():
+                    ed = ev["earnings_date"]
+                    row = tkp[tkp["date"] <= ed]
+                    if row.empty:
+                        continue
+                    norm_y = (row.iloc[-1]["close"] / base - 1) * 100
+                    ec_x.append(ed)
+                    ec_y.append(norm_y)
+                    ec_custom.append([
+                        ev["surprise_pct"],
+                        ev["ret_5d"] * 100,
+                        ed.strftime("%Y-%m-%d"),
+                    ])
+                if ec_x:
+                    fig.add_trace(go.Scatter(
+                        x=ec_x, y=ec_y,
+                        mode="markers",
+                        marker=dict(size=6, color=color,
+                                    line=dict(width=1, color="#FFF"),
+                                    symbol="diamond"),
+                        customdata=ec_custom,
+                        showlegend=False,
+                        hovertemplate=(
+                            "<b>" + tk + "</b>  %{customdata[2]}<br>"
+                            "Surprise: %{customdata[0]:+.1f}%<br>"
+                            "5d Return: %{customdata[1]:+.1f}%"
+                            "<extra></extra>"
+                        ),
+                    ))
 
         fig.update_yaxes(title_text="Normalized Return %", ticksuffix="%")
         fig.update_layout(hovermode="x unified")

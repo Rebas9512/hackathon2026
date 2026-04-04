@@ -259,12 +259,16 @@ with chart_col:
 
     # ── Chart header ──
     if ticker == "ALL":
-        st.markdown(
-            '<div style="padding:4px 0;">'
-            '<span style="font-family:Playfair Display,serif;font-size:28px;color:#FFF;font-weight:700;">'
-            'Magnificent 7 — Normalized Returns</span></div>',
-            unsafe_allow_html=True
-        )
+        hdr_left, hdr_right = st.columns([4, 1])
+        with hdr_left:
+            st.markdown(
+                '<div style="padding:4px 0;">'
+                '<span style="font-family:Playfair Display,serif;font-size:28px;color:#FFF;font-weight:700;">'
+                'Magnificent 7 — Normalized Returns</span></div>',
+                unsafe_allow_html=True
+            )
+        with hdr_right:
+            show_earnings = st.toggle("Earnings Dates", value=False, key="show_ec")
     else:
         latest = prices[prices["ticker"] == ticker].sort_values("date").iloc[-1]
         prev = prices[prices["ticker"] == ticker].sort_values("date").iloc[-2]
@@ -280,11 +284,11 @@ with chart_col:
         )
 
     # ── Main chart ──
-    # Price chart only shows the explicitly active model's buy/sell markers
     chart_overlay = [st.session_state.active_chart_model] if st.session_state.active_chart_model else []
+    show_ec = show_earnings if ticker == "ALL" else False
     fig = build_price_chart(
         prices, events_df, ticker,
-        chart_overlay,
+        chart_overlay, show_earnings_dates=show_ec,
     )
     st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
 

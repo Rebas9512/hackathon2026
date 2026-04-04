@@ -10,6 +10,8 @@ Usage:
 import subprocess
 import sys
 import os
+import webbrowser
+import threading
 from pathlib import Path
 
 DASHBOARD_DIR = Path(__file__).parent / "dashboard"
@@ -51,6 +53,10 @@ def main():
     """)
 
     os.chdir(DASHBOARD_DIR)
+
+    url = f"http://localhost:{port}"
+    threading.Timer(2.0, lambda: webbrowser.open(url)).start()
+
     subprocess.run([
         sys.executable, "-m", "streamlit", "run", str(APP_FILE),
         "--server.port", port,
