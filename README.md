@@ -11,6 +11,8 @@
 | Yixin Wei | yxw230015@utdallas.edu |
 | Ernesto Aguilar | exa200020@utdallas.edu |
 
+**Repository**: https://github.com/Rebas9512/hackathon2026
+
 ## Project Scope
 
 Build a sentiment-driven prediction system that tests whether AI-related text signals can improve **post-earnings stock price prediction** for the Magnificent 7 companies, with a focus on modeling **cross-company sentiment spillover networks**.
