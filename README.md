@@ -1,7 +1,15 @@
 # AI Hype Decoded: Multi-Source Sentiment Spillover and Stock Price Prediction
 
-> 2026 FinHack Challenge - Case 4  
+> 2026 FinHack Challenge - Case 4 | **Team 54**  
 > UTD JSOM Finance Lab
+
+### Team 54
+
+| Member | Email |
+|--------|-------|
+| Tu Le | tnl220001@utdallas.edu |
+| Yixin Wei | yxw230015@utdallas.edu |
+| Ernesto Aguilar | exa200020@utdallas.edu |
 
 ## Project Scope
 
