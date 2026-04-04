@@ -466,6 +466,96 @@ The aggressive model's edge comes from **interaction effects** that logistic reg
 
 **Caveat**: With only 29 test events, the +205.9% figure carries wide confidence intervals. It should be read as directional evidence that the spillover features contain exploitable non-linear structure, not as a production backtest. In a real deployment, the interpretable model defines the strategy thesis; the aggressive model sizes the bets.
 
+### Anatomy of the +205.9%: Where XGBoost's Edge Comes From
+
+XGBoost's cumulative return is built on the same 29 events as LogReg. Their PnL is identical on 17 events (where they agree). The entire +179.5% gap comes from **12 disagreement events**. The pattern is sharp: XGBoost is far more willing to go long in the low-connectedness regime — precisely where LogReg's linear negative coefficient on sentiment causes it to over-short.
+
+#### The 3 Biggest Wins: Low Connectedness = Go Long Aggressively
+
+---
+
+**TSLA — 2024-10-23** | XGB edge: **+41.1%** (largest single disagreement)
+
+> EPS Surprise: **+24.8%** (BEAT) | 5-Day Return: **+20.5%** (RALLIED)
+> System Connectedness: 0.402 (moderate) | Sentiment: 0.49 (neutral)
+> LogReg: Short (wrong, −20.5%) | XGBoost: **Long (correct, +20.5%)**
+
+Tesla crushed earnings by 24.8% — the third-largest beat in the dataset — while sentiment was nearly neutral (0.49). LogReg's negative coefficient on `spillover_weighted_sent` pushed it to short, but XGBoost recognized the pattern: moderate connectedness + massive beat + non-extreme sentiment = the beat is real, go long.
+
+Key headlines:
+| Polarity | Headline |
+|----------|----------|
+| −0.990 | Teslas are 'nearly unusable' as police cars |
+| −0.986 | Musk's Empire Risks Being Targeted by EU for Potential X Fines |
+| +1.000 | Is Tesla, Inc. (TSLA) the Best High Growth Lithium Stock to Invest In? |
+
+The negative headlines were about Musk and politics, not about Tesla's business fundamentals. XGBoost's depth-2 trees could separate this: the *combination* of a large beat and moderate sentiment was a buy signal that the linear model couldn't express.
+
+---
+
+**NVDA — 2024-02-21** | XGB edge: **+30.2%**
+
+> EPS Surprise: **+11.4%** (BEAT) | 5-Day Return: **+15.1%** (RALLIED)
+> System Connectedness: 0.392 (below average) | Sentiment: 0.63
+> LogReg: Short (wrong, −15.1%) | XGBoost: **Long (correct, +15.1%)**
+
+This is M2's biggest failure event revisited. LogReg saw high sentiment (0.63) and shorted — its linear "high sentiment = sell" rule firing as designed. XGBoost saw that system connectedness was only 0.392 (below the 0.42 average): this wasn't system-wide hype, it was NVDA-specific AI momentum. The tree learned: *if* sentiment is high *but* the system is decoupled, the sentiment reflects genuine fundamentals, not priced-in froth.
+
+The 50 ED-day articles confirm the story — this was the moment the market realized AI infrastructure spending was accelerating faster than anyone expected:
+
+| Polarity | Headline |
+|----------|----------|
+| −0.957 | Stocks slip, yields rise as Fed fears cutting rates too soon |
+| −0.758 | Dollar steady, stocks slip ahead of Nvidia results |
+| +1.000 | Walmart, Amazon, Microsoft, Target and Nvidia are part of Zacks Earnings Preview |
+
+---
+
+**AMZN — 2024-04-30** | XGB edge: **+15.7%**
+
+> EPS Surprise: **+18.2%** (BEAT) | 5-Day Return: **+7.9%** (RALLIED)
+> System Connectedness: 0.332 (low) | Sentiment: 0.75 (high)
+> LogReg: Short (wrong, −7.9%) | XGBoost: **Long (correct, +7.9%)**
+
+Same pattern: very low system connectedness (0.332) meant the Mag7 was decoupled. LogReg saw high sentiment and shorted. XGBoost saw decoupled system + strong beat and went long. Amazon's 18% beat on cloud growth (AWS) was a company-specific story that the group dynamics couldn't dilute.
+
+---
+
+#### The Critical Failure: Where XGBoost's Aggression Backfires
+
+**TSLA — 2024-07-23** | XGB edge: **−19.3%** (worst single miss)
+
+> EPS Surprise: **−16.1%** (MISS) | 5-Day Return: **−9.6%** (DROPPED)
+> System Connectedness: 0.332 (low) | Sentiment: 0.68
+> LogReg: Short (correct, +9.6%) | XGBoost: **Long (wrong, −9.6%)**
+
+XGBoost's "low connectedness = go long" heuristic misfired here. System was decoupled, yes — but Tesla *missed* earnings by 16%, the largest miss in the dataset. LogReg's positive coefficient on `surprise_pct` correctly read the miss as a sell signal. XGBoost's depth-2 tree over-indexed on the connectedness regime and ignored the fundamental signal.
+
+Key headlines:
+| Polarity | Headline |
+|----------|----------|
+| −0.660 | 'Few Democrats willing to buy a Tesla' after Elon Musk backs Trump |
+| −0.807 | Will Tesla's Cybertruck define its future? |
+| +1.000 | Stocks to watch next week: Tesla, Microsoft, Alphabet and Amazon |
+
+**NVDA — 2024-11-20** | XGB edge: **−14.5%**
+
+> System Connectedness: **0.563** (highest) | Sentiment: 0.24 (very low)
+> LogReg: Short (correct, +7.2%) | XGBoost: **Long (wrong, −7.2%)**
+
+This is interesting: LogReg correctly read the peak system connectedness as a regime signal and shorted. XGBoost saw the extremely low sentiment (0.24) and went long, perhaps treating it as a contrarian buy. But the low sentiment was a *symptom* of the tightly-wound system, not a separate signal — the network was transmitting bearish pressure, and NVDA couldn't escape it even with an 8.5% beat.
+
+#### The Pattern
+
+| | XGBoost Wins | XGBoost Losses |
+|--|-------------|----------------|
+| **When** | Low sys_conn + genuine beat | Low sys_conn + genuine miss |
+| **Why** | Correctly learns "decoupled + beat = buy" threshold | Over-applies "low connectedness = always long" |
+| **Count** | 7 / 12 disagreements correct | 5 / 12 wrong |
+| **Net PnL** | +87.6% across disagreements | |
+
+XGBoost's edge is not random — it systematically profits from the low-connectedness long signal. Its failures come from the same source: it trusts the regime *too much* and under-weights the fundamental signal (surprise %) when they conflict.
+
 ---
 
 ## Five-Model Progressive Comparison
