@@ -251,7 +251,19 @@ The "buy the rumor, sell the news" pattern that M2 discovered is strongest when 
 - **High sentiment in a generally hyped market** → likely priced in → sell (MSFT Jan 2025, GOOGL Feb 2025)
 - **High sentiment with peers at neutral/low** → company-specific good news → may still have upside (NVDA Feb 2024)
 
-M3 adds **4 cross-company features** from a Diebold-Yilmaz dual-layer spillover network (one layer on returns, one on sentiment). For each earnings event, we fit VAR models on the [ED-150, ED-8] window of all 7 Mag7 companies, compute Generalized FEVD (Pesaran-Shin 1998), and extract a 7×7 directional connectedness matrix capturing "who influences whom."
+### How the Network Works: Diebold-Yilmaz in Plain English
+
+> Full walkthrough with formulas and worked examples: **[docs/dy_framework_explained.md](docs/dy_framework_explained.md)**
+
+The core question is: **"When NVDA sneezes, does AAPL catch a cold?"**
+
+For each earnings event, we take ~142 days of pre-earnings data ([ED-150, ED-8]) and build two parallel networks:
+
+1. **Return layer**: Fit a VAR model on 7 Mag7 daily returns → compute Generalized FEVD (Pesaran-Shin 1998) → get a 7×7 matrix where entry `d_ij` = "what fraction of AAPL's return volatility is explained by shocks from NVDA?"
+2. **Sentiment layer**: Same pipeline on 7 Mag7 daily sentiment scores → `d_ij` = "whose sentiment shift predicts whose?"
+3. **Combine**: `W = 0.5 × D_return + 0.5 × D_sentiment`
+
+The result is a **weighted, directed graph** — 7 nodes, edges weighted by spillover strength, with arrows showing who influences whom. From this graph we extract 4 features:
 
 New features:
 - `spillover_weighted_sent` — other companies' sentiment, weighted by how strongly they spill into the target
@@ -667,8 +679,6 @@ Computed using daily-aggregate data for quiet period:
 - `spillover_neg_asym`: weighted sum of spillover from companies with negative sentiment
 
 ### Phase 5: Dual-Layer Spillover Network — Diebold-Yilmaz Framework (M3 Core)
-
-> For a step-by-step plain-English explanation of the VAR → GFEVD → connectedness matrix pipeline, see [docs/dy_framework_explained.md](docs/dy_framework_explained.md).
 
 The key innovation: with continuous daily sentiment data for all 7 companies, we can build **dual-layer** dynamic connectedness networks — one for returns and one for sentiment — following the Diebold-Yilmaz (2014) framework.
 
