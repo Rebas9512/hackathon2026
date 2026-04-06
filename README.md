@@ -329,6 +329,12 @@ hackathon2026/
 
 ---
 
+## Full Documentation
+
+For a printable version with all charts, case studies, and a complete technical appendix on the Diebold-Yilmaz spillover framework, see **[Spillover_Alpha_Project_Summary.pdf](Spillover_Alpha_Project_Summary.pdf)**.
+
+---
+
 ## Academic References
 
 - Diebold, F.X. and K. Yilmaz (2014). "On the Network Topology of Variance Decompositions." *Journal of Econometrics*, 182, 119-134.
