@@ -240,7 +240,7 @@ for i, tk in enumerate(tickers):
     with ticker_cols[i]:
         is_active = st.session_state.selected_ticker == tk
         if st.button(
-            tk, key=f"tk_{tk}", use_container_width=True,
+            tk, key=f"tk_{tk}", width="stretch",
             type="primary" if is_active else "secondary",
         ):
             st.session_state.selected_ticker = tk
@@ -290,7 +290,7 @@ with chart_col:
         prices, events_df, ticker,
         chart_overlay, show_earnings_dates=show_ec,
     )
-    st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+    st.plotly_chart(fig, width="stretch", config={"displayModeBar": False})
 
     # ── Model toggle bar (shared by ALL and single ticker) ──
     st.markdown(
@@ -308,7 +308,7 @@ with chart_col:
             if st.button(
                 f"{label_prefix}{MODEL_NAMES[model_key]}",
                 key=f"btn_{model_key}",
-                use_container_width=True,
+                width="stretch",
             ):
                 if in_list:
                     st.session_state.selected_models.remove(model_key)
@@ -326,10 +326,10 @@ with chart_col:
         cum_fig = build_cumulative_return_chart(
             events_df, st.session_state.selected_models, ticker
         )
-        st.plotly_chart(cum_fig, use_container_width=True, config={"displayModeBar": False})
+        st.plotly_chart(cum_fig, width="stretch", config={"displayModeBar": False})
     else:
         cum_fig = build_cumulative_return_chart(events_df, [], ticker)
-        st.plotly_chart(cum_fig, use_container_width=True, config={"displayModeBar": False})
+        st.plotly_chart(cum_fig, width="stretch", config={"displayModeBar": False})
 
 
 # ── RIGHT: Model Detail Panel ─────────────────────────────────────────────
@@ -616,7 +616,7 @@ with detail_col:
             unsafe_allow_html=True
         )
 
-        st.plotly_chart(net_fig, use_container_width=True, config={"displayModeBar": False})
+        st.plotly_chart(net_fig, width="stretch", config={"displayModeBar": False})
 
         # Legend
         st.markdown(
